@@ -1,0 +1,12 @@
+#wprmenu_menu_ul{
+    @apply flex flex-col gap-4;
+        .menu-item{
+            @apply border-b-2 border-bell-white;
+        }
+}
+.wpr-search-field{
+    @apply border-2 border-bell-white bg-transparent p-8 text-bell-white rounded-md outline-none;
+}
+.wpr_submit{
+    color: white !important;
+}
