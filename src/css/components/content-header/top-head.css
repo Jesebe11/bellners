@@ -1,3 +1,44 @@
 .top-head{
-    @apply bg-bell-gray-1;
+    @apply bg-bell-gray-1 p-2 justify-center;
+        .widget_search{
+            .search-form{
+                @apply flex items-center gap-2 justify-center;
+            }
+            .search-form > label{
+                .search-field{
+                    @apply bg-bell-purple-dark border-2 border-bell-white rounded-md p-2 outline-none;
+                }
+            }
+        }
+        .widget_details{
+            @apply flex flex-col items-center;
+        }
+        &__details{
+            @apply flex justify-center gap-2 items-center;
+                &--number{
+                    &:before{
+                        content: url('https://i.postimg.cc/hG3hxGwj/viber.png');
+                    }
+                }
+                &--email{
+                    &:before{
+                        content: url('https://i.postimg.cc/YSShhFdZ/email.png');
+                    }
+                }
+        }
+}
+@screen lg{
+    .top-head{
+        @apply flex flex-row justify-around items-center;
+        .widget_details{
+            @apply flex-row gap-4;
+        }
+        &__details{
+            &--number{
+                &:after{
+                    content:url('https://i.postimg.cc/DwB3C1m5/vertical-line.png');
+                }
+            }
+        }
+    }
 }

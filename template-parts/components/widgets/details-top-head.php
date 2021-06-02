@@ -23,8 +23,8 @@ class Top_Head extends WP_Widget {
 
         ?>
 
-            <p class="top-head__details--number">+58 416-302-21-30</p>
-            <p class="top-head__details">jesebellinformatica@gmail.com</p>
+            <p class="top-head__details top-head__details--number">+58 416-302-21-30</p>
+            <p class="top-head__details top-head__details--email">bellners@gmail.com</p>
 
 
         <?php

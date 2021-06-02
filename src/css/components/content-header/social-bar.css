@@ -1,0 +1,18 @@
+.widget_social{
+    @apply flex justify-center;
+        .social{
+            @apply inline-flex;
+                &__item{
+                    @apply p-2 transition duration-300;
+                        &:hover{
+                            @apply border border-bell-purple-dark rounded-md;
+                        }
+                }
+                &__item > a > img{
+                    @apply transition duration-300 transform;
+                        &:hover{
+                            @apply rotate-90;
+                        }
+                }
+        }
+}

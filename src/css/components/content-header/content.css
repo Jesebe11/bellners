@@ -1,5 +1,5 @@
 .header{
-    @apply border-b-4 border-bell-purple-dark w-full justify-center flex flex-col;
+    @apply border-b-4 border-bell-purple-dark w-full flex flex-col gap-2;
 }
 @screen lg{
     .header{

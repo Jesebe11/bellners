@@ -1,5 +1,5 @@
 .branding{
-    @apply flex justify-around items-end;
+    @apply flex justify-around items-end p-2;
     .identity{
         @apply flex gap-2 items-end;
             .title{
