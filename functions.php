@@ -141,6 +141,8 @@ add_action( 'widgets_init', 'bellners_widgets_init' );
  */
 function bellners_scripts() {
 	wp_enqueue_style( 'bellners-style', get_template_directory_uri() . '/dist/css/style.css', array(), '1.0.0' );
+	wp_enqueue_style('roboto_google_fonts', "https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,900;1,100;1,300;1,400&display=swap");
+
 	wp_style_add_data( 'bellners-style', 'rtl', 'replace' );
 
 	wp_enqueue_script( 'bellners-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );

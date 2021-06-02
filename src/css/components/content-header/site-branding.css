@@ -1,0 +1,6 @@
+.branding{
+    @apply flex gap-2 items-center p-4;
+        .title{
+            @apply text-bell-purple-dark font-bold;
+        }
+}
