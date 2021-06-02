@@ -23,9 +23,9 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <div id="page" class="site">
-	<header id="masthead" class="site-header">
+	<header id="masthead" class="header">
 			<?
 				get_template_part( 'template-parts/components/content-header/site-branding' );
-				get_template_part( 'template-parts/components/content-header/nav-primmary' );
+				get_template_part( 'template-parts/components/content-header/primary-menu' );
 			?>
 	</header>

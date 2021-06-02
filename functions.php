@@ -144,6 +144,7 @@ function bellners_scripts() {
 	wp_style_add_data( 'bellners-style', 'rtl', 'replace' );
 
 	wp_enqueue_script( 'bellners-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'bellners-navigation', get_template_directory_uri() . '/src/js/hamburger.js', array(), _S_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
