@@ -13,6 +13,8 @@ module.exports = {
         'bell-purple-light' : '#70178C',
         'bell-purple-light-1' : '#7E3496',
         'bell-white' : '#fff',
+        'bell-gray' : '#555',
+        'bell-gray-1' : '#b0b0b0',
       },
     },
   },

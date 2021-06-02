@@ -1,6 +1,9 @@
 .branding{
-    @apply flex gap-2 items-end p-4;
-        .title{
-            @apply text-bell-purple-dark font-extrabold text-2xl;
-        }
+    @apply flex justify-around items-end;
+    .identity{
+        @apply flex gap-2 items-end;
+            .title{
+                @apply text-bell-purple-dark font-extrabold text-2xl;
+            }
+    }
 }

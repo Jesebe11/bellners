@@ -1,0 +1,11 @@
+.menu-primary-container{
+    .menu{
+        @apply inline-flex;
+            .menu-item{
+                @apply p-2 text-base transition duration-200 font-bold;
+                    &:hover{
+                        @apply text-bell-purple-dark underline;
+                    }
+            }
+    }
+}

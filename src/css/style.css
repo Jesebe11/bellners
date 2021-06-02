@@ -8,5 +8,5 @@
 /**/@import 'tailwindcss/utilities';
 
 .site{
-    @apply flex flex-col items-center;
+    @apply flex flex-col items-center text-bell-gray;
 }
