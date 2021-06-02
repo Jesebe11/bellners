@@ -1,4 +1,5 @@
 <section class="top-head">
-    <p class="top-head__details--number">+58 416-302-21-30</p>
-    <p class="top-head__details">jesebellinformatica@gmail.com</p>
+    <?php if( is_active_sidebar( 'sidebar-top-head' ) ) {
+            dynamic_sidebar( 'sidebar-top-head' );
+        } ?>
 </section>
