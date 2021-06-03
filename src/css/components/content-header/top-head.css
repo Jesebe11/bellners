@@ -6,7 +6,7 @@
             }
             .search-form > label{
                 .search-field{
-                    @apply bg-bell-purple-dark border-2 border-bell-white rounded-md p-2 outline-none;
+                    @apply bg-bell-gray border-none outline-none p-2 rounded-md text-bell-gray-1;
                 }
             }
         }
@@ -14,7 +14,7 @@
             @apply flex flex-col items-center;
         }
         &__details{
-            @apply flex justify-center gap-2 items-center;
+            @apply flex justify-center gap-2 items-center transition duration-300;
                 &--number{
                     &:before{
                         content: url('https://i.postimg.cc/hG3hxGwj/viber.png');
@@ -24,6 +24,9 @@
                     &:before{
                         content: url('https://i.postimg.cc/YSShhFdZ/email.png');
                     }
+                }
+                &:hover{
+                    @apply text-bell-purple-dark cursor-pointer;
                 }
         }
 }

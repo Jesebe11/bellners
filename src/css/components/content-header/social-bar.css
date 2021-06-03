@@ -3,7 +3,7 @@
         .social{
             @apply inline-flex;
                 &__item{
-                    @apply p-2 transition duration-300;
+                    @apply transition duration-300 p-1;
                         &:hover{
                             @apply border border-bell-purple-dark rounded-md;
                         }

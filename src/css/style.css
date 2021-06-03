@@ -2,11 +2,12 @@
 
 /**/@import 'tailwindcss/components';
 
-@import './header.css';
+@import './content-header.css';
+@import './content-home.css';
 
 
 /**/@import 'tailwindcss/utilities';
 
 .site{
-    @apply flex flex-col items-center text-bell-gray;
+    @apply flex flex-col items-center text-bell-gray w-full;
 }
