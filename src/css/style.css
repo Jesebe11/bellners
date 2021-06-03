@@ -10,4 +10,7 @@
 
 .site{
     @apply flex flex-col items-center text-bell-gray w-full;
+        .main{
+            @apply w-full;
+        }
 }

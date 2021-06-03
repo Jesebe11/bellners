@@ -1,10 +1,29 @@
+.carousel{
+    @apply relative shadow-2xl bg-white w-full;
+}
+.carousel-inner{
+    @apply relative overflow-hidden w-full;
+}
 .carousel-open:checked + .carousel-item {
     position: static;
     opacity: 100;
 }
 .carousel-item {
+    @apply absolute opacity-0;
     -webkit-transition: opacity 0.6s ease-out;
     transition: opacity 0.6s ease-out;
+}
+.banner{
+    @apply block h-full w-full text-center;
+}
+.banner > img{
+    @apply min-h-full min-w-full;
+}
+.prev{
+    @apply w-10 h-10 ml-2 absolute cursor-pointer hidden text-3xl font-bold text-black rounded-full bg-white  leading-tight text-center z-10 inset-y-0 left-0 my-auto;
+}
+.next{
+    @apply w-10 h-10 mr-2 absolute cursor-pointer hidden text-3xl font-bold text-black rounded-full bg-white leading-tight text-center z-10 inset-y-0 right-0 my-auto;
 }
 #carousel-1:checked ~ .control-1,
 #carousel-2:checked ~ .control-2,
@@ -12,15 +31,14 @@
     display: block;
 }
 .carousel-indicators {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    position: absolute;
+    @apply list-none m-0 p-0 absolute left-0 right-0 text-center z-10;
     bottom: 2%;
-    left: 0;
-    right: 0;
-    text-align: center;
-    z-index: 10;
+}
+.carousel-indicators > li{
+    @apply inline-block mr-3;
+}
+.carousel-bullet{
+    @apply cursor-pointer block text-6xl text-white text-blue-700;
 }
 #carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
 #carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
