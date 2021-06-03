@@ -4,6 +4,7 @@
 
 @import './content-header.css';
 @import './content-home.css';
+@import './content-footer.css';
 
 
 /**/@import 'tailwindcss/utilities';
