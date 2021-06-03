@@ -4,6 +4,22 @@
 		<input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
 		<div class="carousel-item" style="height:50vh;">
 			<div class="banner">
+                    <div class="banner__info">
+                        <h1 class="strong">
+                            Great Website Adds Great  Values
+                        </h1>
+                        <h5 class="light">
+                            Offer full service digital media solution to  your clients.
+                        </h5>
+                        <div class="group-buttons">
+                            <a href="">
+                                <div class="group-buttons__btns">Contact</div>
+                            </a>
+                            <a href="">
+                                <div class="group-buttons__btns">Contact</div>
+                            </a>
+                        </div>
+                    </div>
                 <img src="https://i.postimg.cc/8P4BFK3t/startup-594126-1920-2.jpg" alt="StartUp">
             </div>
 		</div>

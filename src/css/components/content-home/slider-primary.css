@@ -14,21 +14,33 @@
     transition: opacity 0.6s ease-out;
 }
 .banner{
-    @apply block h-full w-full text-center;
+    @apply block h-full w-full;
+        &__info{
+            @apply absolute w-11/12 h-full flex flex-col items-end justify-start;
+                .strong{
+                    @apply text-bell-white font-extrabold text-6xl;
+                }
+        }
 }
 .banner > img{
     @apply min-h-full min-w-full;
 }
 .prev{
-    @apply w-10 h-10 ml-2 absolute cursor-pointer hidden text-3xl font-bold text-black rounded-full bg-white  leading-tight text-center z-10 inset-y-0 left-0 my-auto;
+    @apply w-10 h-10 ml-2 absolute cursor-pointer hidden text-3xl font-bold text-bell-gray-1 rounded-full transition duration-300 bg-bell-purple-dark leading-tight text-center z-10 inset-y-0 left-0 my-auto;
+        &:hover{
+            @apply bg-bell-gray-1 text-bell-purple-dark;
+        }
 }
 .next{
-    @apply w-10 h-10 mr-2 absolute cursor-pointer hidden text-3xl font-bold text-black rounded-full bg-white leading-tight text-center z-10 inset-y-0 right-0 my-auto;
+    @apply w-10 h-10 mr-2 absolute cursor-pointer hidden text-3xl font-bold text-bell-gray-1 rounded-full transition duration-300 bg-bell-purple-dark leading-tight text-center z-10 inset-y-0 right-0 my-auto;
+    &:hover{
+        @apply bg-bell-gray-1 text-bell-purple-dark;
+    }
 }
 #carousel-1:checked ~ .control-1,
 #carousel-2:checked ~ .control-2,
 #carousel-3:checked ~ .control-3 {
-    display: block;
+    @apply block;
 }
 .carousel-indicators {
     @apply list-none m-0 p-0 absolute left-0 right-0 text-center z-10;
@@ -38,10 +50,23 @@
     @apply inline-block mr-3;
 }
 .carousel-bullet{
-    @apply cursor-pointer block text-6xl text-white text-blue-700;
+    @apply cursor-pointer block text-5xl text-bell-purple-dark;
+        &:hover{
+            @apply text-bell-gray-1;
+        }
 }
 #carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
 #carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
 #carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
-    color: #2b6cb0;  /*Set to match the Tailwind colour you want the active one to be */
+    @apply text-bell-gray-1;
+}
+@screen lg{
+    .banner{
+        &__info{
+            @apply justify-center;
+            .strong{
+                @apply text-6xl;
+            }
+        }
+    }
 }

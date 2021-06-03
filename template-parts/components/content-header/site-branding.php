@@ -14,4 +14,5 @@
 				?>
 	</div>
 			<? get_template_part( 'template-parts/components/content-header/primary-menu' ); ?>
+			<? get_template_part( 'template-parts/components/content-header/link-cart' ); ?>
 </div>
