@@ -16,9 +16,18 @@
 .banner{
     @apply block h-full w-full;
         &__info{
-            @apply absolute w-11/12 h-full flex flex-col items-end justify-start;
+            @apply absolute h-full flex flex-col text-bell-white gap-1 items-center justify-center;
                 .strong{
-                    @apply text-bell-white font-extrabold text-6xl;
+                    @apply font-extrabold text-lg bg-black bg-opacity-50 p-2;
+                }
+                .light{
+                    @apply font-medium text-sm text-bell-gray-1 bg-black bg-opacity-50 p-2;
+                }
+                .group-buttons{
+                    @apply flex gap-2 flex-col items-center;
+                        &__btns{
+                            @apply bg-bell-gray-1 px-12 py-4 text-bell-purple-dark font-bold rounded-sm duration-500;
+                        }
                 }
         }
 }
@@ -63,9 +72,20 @@
 @screen lg{
     .banner{
         &__info{
-            @apply justify-center;
+            @apply items-end p-8 w-full;
             .strong{
-                @apply text-6xl;
+                @apply text-5xl;
+            }
+            .light{
+                @apply text-2xl;
+            }
+            .group-buttons{
+                @apply flex-row gap-2;
+                    &__btns{
+                            &:hover{
+                                @apply bg-bell-purple-dark text-bell-gray-1;
+                            }
+                    }
             }
         }
     }

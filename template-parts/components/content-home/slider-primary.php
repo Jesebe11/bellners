@@ -2,7 +2,7 @@
 	<div class="carousel-inner">
 	<!--Slide 1-->
 		<input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
-		<div class="carousel-item" style="height:50vh;">
+		<div class="carousel-item" style="height:60vh;">
 			<div class="banner">
                     <div class="banner__info">
                         <h1 class="strong">
@@ -16,7 +16,7 @@
                                 <div class="group-buttons__btns">Contact</div>
                             </a>
                             <a href="">
-                                <div class="group-buttons__btns">Contact</div>
+                                <div class="group-buttons__btns">Portfolio</div>
                             </a>
                         </div>
                     </div>
