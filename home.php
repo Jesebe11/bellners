@@ -6,6 +6,7 @@
         <?
             get_template_part( 'template-parts/components/content-home/slider-primary' );
 		?>
+
 	</main>
 
 <?php

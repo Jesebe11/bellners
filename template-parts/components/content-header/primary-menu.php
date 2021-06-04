@@ -1,4 +1,4 @@
-<nav id="site-navigation" class="main-navigation">
+<nav id="site-navigation" class="menu-primary-container">
 	<?php
 		wp_nav_menu(
 			array(

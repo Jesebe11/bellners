@@ -20,6 +20,8 @@ get_header();
 			<div class="page-content">
 				<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'bellners' ); ?></p>
 
+				<h1><?php esc_html_e( 'Uppercase', 'bellners' ); ?></h1>
+
 					<?php
 					get_search_form();
 
