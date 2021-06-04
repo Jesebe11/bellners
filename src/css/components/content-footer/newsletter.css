@@ -1,7 +1,6 @@
 .footer{
-    @apply w-full flex flex-col;
     .newsletter{
-        @apply bg-bell-gray-2 flex flex-col gap-6 items-center;
+        @apply bg-bell-gray-2 flex flex-col gap-6 items-center py-4;
             &__title{
                 @apply text-bell-gray-1;
                     &--strong{
