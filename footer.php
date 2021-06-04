@@ -13,7 +13,7 @@
 
 	<footer id="colophon" class="footer">
 		<?
-            get_template_part( 'template-parts/components/content-footer/newsletter' );
+            get_template_part( 'template-parts/content-footer' );
 		?>
 
 	</footer>
