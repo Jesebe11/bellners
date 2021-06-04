@@ -6,17 +6,17 @@
 			<div class="banner">
                     <div class="banner__info">
                         <h1 class="strong">
-                            Great Website Adds Great  Values
+                            Un gran sitio web añade grandes valores
                         </h1>
                         <h5 class="light">
-                            Offer full service digital media solution to  your clients.
+                            Ofrecemos un servicio completo de solución.
                         </h5>
                         <div class="group-buttons">
                             <a href="">
-                                <div class="group-buttons__btns">Contact</div>
+                                <div class="group-buttons__btns">Contacto</div>
                             </a>
                             <a href="">
-                                <div class="group-buttons__btns">Portfolio</div>
+                                <div class="group-buttons__btns">Portafolio</div>
                             </a>
                         </div>
                     </div>
@@ -30,6 +30,22 @@
 		<input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
 		<div class="carousel-item" style="height:50vh;">
 			<div class="banner">
+            <div class="banner__info">
+                        <h1 class="strong">
+                            Un gran sitio web añade grandes valores
+                        </h1>
+                        <h5 class="light">
+                            Ofrecemos un servicio completo de solución.
+                        </h5>
+                        <div class="group-buttons">
+                            <a href="">
+                                <div class="group-buttons__btns">Contacto</div>
+                            </a>
+                            <a href="">
+                                <div class="group-buttons__btns">Portafolio</div>
+                            </a>
+                        </div>
+                    </div>
                 <img src="https://i.postimg.cc/1zdZyKsz/office-594132-1920-1.jpg" alt="Bussines">
             </div>
 		</div>
@@ -40,6 +56,22 @@
 		<input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
 		<div class="carousel-item" style="height:50vh;">
 			<div class="banner">
+            <div class="banner__info">
+                        <h1 class="strong">
+                            Un gran sitio web añade grandes valores
+                        </h1>
+                        <h5 class="light">
+                            Ofrecemos un servicio completo de solución.
+                        </h5>
+                        <div class="group-buttons">
+                            <a href="">
+                                <div class="group-buttons__btns">Contacto</div>
+                            </a>
+                            <a href="">
+                                <div class="group-buttons__btns">Portafolio</div>
+                            </a>
+                        </div>
+                    </div>
                 <img src="https://i.postimg.cc/2ygpGr8m/business-2717063-1920-1.jpg" alt="Build">
             </div>
 		</div>

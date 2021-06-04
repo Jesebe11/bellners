@@ -1,3 +1,46 @@
-.newsletter{
-    @apply bg-bell-gray-2;
+.footer{
+    @apply w-full flex flex-col;
+    .newsletter{
+        @apply bg-bell-gray-2 flex flex-col gap-4 items-center;
+            &__title{
+                @apply text-bell-gray-1;
+                    &--strong{
+                        @apply font-extrabold text-4xl w-2/3 text-center;
+                    }
+                    &--light{
+                        @apply font-bold text-base;
+                    }
+            }
+            &__title > a {
+                @apply text-bell-purple-dark duration-200;
+                    &:hover{
+                        @apply text-bell-gray-1;
+                    }
+            }
+        }
+        .newsletter-form{
+            .wpcf7{
+                .wpcf7-form{
+                    @apply flex flex-row gap-4 items-center justify-center w-full;
+                }
+                .wpcf7-form > p > .your-name::before{
+                    @apply absolute;
+                    left: 1%;
+                    top: 1%;
+                    content: url('https://i.postimg.cc/Kj50yh5w/user.png');
+                }
+                .wpcf7-form > p > .your-email::before{
+                    @apply absolute;
+                    left: 1%;
+                    top: 1%;
+                    content: url('https://i.postimg.cc/YSShhFdZ/email.png');
+                }
+                .wpcf7-form > p > .wpcf7-form-control-wrap > .wpcf7-form-control{
+                    @apply py-4 px-10 bg-bell-white;
+                }
+                .wpcf7-form > p > .wpcf7-form-control{
+                    @apply p-4 bg-bell-purple-dark text-bell-gray-1 font-semibold;
+                }
+            }
+        }
 }

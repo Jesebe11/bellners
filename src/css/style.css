@@ -10,8 +10,11 @@
 /**/@import 'tailwindcss/utilities';
 
 .site{
-    @apply flex flex-col items-center text-bell-gray w-full;
+    @apply flex flex-col items-center text-bell-gray w-full gap-10;
         .main{
             @apply w-full;
         }
+}
+html{
+    scroll-behavior:smooth;
 }
