@@ -16,9 +16,6 @@
             get_template_part( 'template-parts/components/content-footer/newsletter' );
 		?>
 
-
-  <a href="#top">top</a>
-
 	</footer>
 </div>
 

@@ -1,7 +1,7 @@
 .footer{
     @apply w-full flex flex-col;
     .newsletter{
-        @apply bg-bell-gray-2 flex flex-col gap-4 items-center;
+        @apply bg-bell-gray-2 flex flex-col gap-6 items-center;
             &__title{
                 @apply text-bell-gray-1;
                     &--strong{
@@ -15,6 +15,12 @@
                 @apply text-bell-purple-dark duration-200;
                     &:hover{
                         @apply text-bell-gray-1;
+                    }
+            }
+            .top-btn{
+                @apply rounded-full border-2 border-bell-gray p-4 -mt-6 bg-bell-purple-dark text-bell-gray-1 font-bold animate-bounce duration-300;
+                    &:hover{
+                        @apply animate-none;
                     }
             }
         }

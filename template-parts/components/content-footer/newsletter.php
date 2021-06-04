@@ -1,4 +1,7 @@
 <section class="newsletter">
+    <a class="top-btn" href="#top">
+        <img src="https://i.postimg.cc/sf99dLG9/up-arrow.png" alt="">
+    </a>
     <h1 class="newsletter__title newsletter__title--strong">
         Suscríbase a nuestro boletín para estar al día de las novedades tecnológicas.
     </h1>
