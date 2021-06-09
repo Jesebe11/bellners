@@ -1,10 +1,10 @@
 .footer{
     .newsletter{
-        @apply bg-bell-gray-2 flex flex-col gap-6 items-center py-4;
+        @apply bg-bell-gray-2 flex flex-col gap-6 py-4 items-center;
             &__title{
                 @apply text-bell-gray-1;
                     &--strong{
-                        @apply font-extrabold text-4xl w-2/3 text-center;
+                        @apply font-extrabold text-xl w-2/3 text-center;
                     }
                     &--light{
                         @apply font-bold text-base;
@@ -26,7 +26,7 @@
         .newsletter-form{
             .wpcf7{
                 .wpcf7-form{
-                    @apply flex flex-row gap-4 items-center justify-center w-full;
+                    @apply flex flex-col gap-4 items-center justify-center w-full;
                 }
                 .wpcf7-form > p > .your-name::before{
                     @apply absolute;
@@ -41,11 +41,33 @@
                     content: url('https://i.postimg.cc/YSShhFdZ/email.png');
                 }
                 .wpcf7-form > p > .wpcf7-form-control-wrap > .wpcf7-form-control{
-                    @apply py-4 px-10 bg-bell-white;
+                    @apply p-2 bg-bell-white w-2/3;
                 }
                 .wpcf7-form > p > .wpcf7-form-control{
                     @apply p-4 bg-bell-purple-dark text-bell-gray-1 font-semibold;
                 }
             }
         }
+}
+@screen lg{
+    .footer{
+        .newsletter{
+            @apply items-center;
+            &__title{
+                    &--strong{
+                        @apply font-extrabold text-4xl w-2/3 text-center;
+                    }
+                    &--light{
+                        @apply font-bold text-base;
+                    }
+            }
+        }
+        .newsletter-form{
+            .wpcf7{
+                .wpcf7-form > p > .wpcf7-form-control-wrap > .wpcf7-form-control{
+                    @apply py-4 px-10 w-full;
+                }
+            }
+        }
+    }
 }

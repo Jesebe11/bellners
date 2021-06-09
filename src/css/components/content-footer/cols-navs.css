@@ -1,19 +1,24 @@
 .footer-blocks{
-    @apply bg-bell-gray-3 flex flex-wrap flex-row text-bell-gray-2 justify-center;
+    @apply bg-bell-gray-3 flex flex-wrap flex-col text-bell-gray-2 justify-center p-4;
         .widget_nav_menu{
             @apply w-1/4 flex flex-col;
-                .widget-title{
-                    @apply text-4xl font-bold;
-                }
+            .widget-title{
+                @apply text-4xl font-bold px-2;
+            }
                 .menu-menu-footer-2-container{
                     .menu{
                         .menu-item > a{
                             @apply text-opacity-50;
                                 &:hover{
-                                    @apply text-bell-purple-dark;
+                                    @apply text-bell-purple-dark font-bold;
                                 }
                         }
                     }
                 }
         }
+}
+@screen lg{
+    .footer-blocks{
+        @apply flex-row items-center;
+    }
 }
