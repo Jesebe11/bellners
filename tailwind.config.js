@@ -16,6 +16,7 @@ module.exports = {
         'bell-gray' : '#555',
         'bell-gray-1' : '#b0b0b0',
         'bell-gray-2' : '#323a45',
+        'bell-gray-3' : '#eaeaea',
       },
     },
   },

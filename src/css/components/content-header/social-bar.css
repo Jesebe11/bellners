@@ -1,5 +1,5 @@
 .widget_social{
-    @apply flex justify-center;
+    @apply flex flex-col;
         .social{
             @apply inline-flex;
                 &__item{

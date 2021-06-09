@@ -22,7 +22,7 @@ class Social extends WP_Widget {
         echo $args[ 'before_widget' ];
 
         ?>
-
+        <h2 class="widget-title">Siguenos en nuestras redes!</h2>
         <ul class="social">
             <li class="social__item">
                 <a href="#" target="_blank">
