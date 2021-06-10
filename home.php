@@ -4,7 +4,7 @@
 
 	<main id="primary" class="main">
         <?
-            get_template_part( 'template-parts/components/content-home/slider-primary' );
+            get_template_part( 'template-parts/content-home' );
 
 		?>
 

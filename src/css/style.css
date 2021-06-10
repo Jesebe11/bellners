@@ -12,9 +12,24 @@
 .site{
     @apply flex flex-col items-center text-bell-gray w-full gap-10;
         .main{
-            @apply w-full;
+            @apply w-full flex-col flex items-center;
+                .block-home-title{
+                    @apply text-4xl font-extrabold text-bell-purple-dark border-bell-purple-dark border-b-2 border-opacity-50;
+                }
+                .block-home{
+                    @apply flex flex-col w-full px-2;
+                }
         }
 }
 html{
     scroll-behavior:smooth;
+}
+@screen lg{
+    .site{
+        .main{
+            .block-home{
+                @apply w-4/5;
+            }
+        }
+    }
 }
