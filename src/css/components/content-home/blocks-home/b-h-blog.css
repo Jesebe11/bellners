@@ -1,0 +1,5 @@
+.block-home{
+    &__blog{
+        @apply flex;
+    }
+}
