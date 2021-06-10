@@ -1,7 +1,7 @@
 .widget_social{
     @apply flex flex-col items-center;
     .message{
-        @apply text-2xl font-bold;
+        @apply text-4xl font-bold;
     }
         .social{
             @apply inline-flex;

@@ -20,9 +20,9 @@
 }
 @screen lg{
     .footer-blocks{
-        @apply flex-row items-center h-64 justify-center;
+        @apply flex-row items-start h-64 justify-center p-16 gap-4;
             .widget_nav_menu{
-                @apply border-none w-1/4;
+                @apply border-r-2 border-b-0 border-bell-purple-dark w-1/5 border-opacity-50;
             }
     }
 }
