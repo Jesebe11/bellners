@@ -25,8 +25,9 @@
         }
         .newsletter-form{
             .wpcf7{
+                @apply flex justify-center;
                 .wpcf7-form{
-                    @apply flex flex-col gap-4 items-center justify-center w-full;
+                    @apply flex gap-4 w-3/4;
                 }
                 .wpcf7-form > p > .your-name::before{
                     @apply absolute;

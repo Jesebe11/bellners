@@ -3,14 +3,15 @@
         .widget_nav_menu{
             @apply w-1/4 flex flex-col;
             .widget-title{
-                @apply text-4xl font-bold px-2;
+                @apply text-4xl font-bold;
             }
-                .menu-menu-footer-2-container{
+                div{
                     .menu{
+                        @apply  px-4;
                         .menu-item > a{
                             @apply text-opacity-50;
                                 &:hover{
-                                    @apply text-bell-purple-dark font-bold;
+                                    @apply text-bell-purple-dark font-bold underline;
                                 }
                         }
                     }
@@ -19,6 +20,6 @@
 }
 @screen lg{
     .footer-blocks{
-        @apply flex-row items-center;
+        @apply flex-row items-center h-64 justify-center;
     }
 }
