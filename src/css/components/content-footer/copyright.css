@@ -1,0 +1,12 @@
+.copyright{
+    @apply text-sm text-bell-gray border-t border-bell-purple-dark border-opacity-50 flex justify-center;
+        &__info{
+            @apply p-4;
+                .link{
+                    @apply text-bell-purple-dark font-bold duration-500;
+                        &:hover{
+                            @apply text-bell-gray-2;
+                        }
+                }
+        }
+}
