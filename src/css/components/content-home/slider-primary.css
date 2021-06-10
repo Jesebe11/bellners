@@ -14,7 +14,7 @@
     transition: opacity 0.6s ease-out;
 }
 .banner{
-    @apply block h-full w-full;
+    @apply flex items-center h-full w-full;
         &__info{
             @apply absolute h-full flex flex-col text-bell-white gap-1 items-center justify-center;
                 .strong{

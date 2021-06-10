@@ -1,6 +1,6 @@
 .footer{
     .newsletter{
-        @apply bg-bell-gray-2 flex flex-col gap-6 py-4 items-center;
+        @apply bg-bell-gray-2 flex flex-col gap-6 py-4 px-2 items-center;
             &__title{
                 @apply text-bell-gray-1;
                     &--strong{
@@ -27,7 +27,7 @@
             .wpcf7{
                 @apply flex justify-center;
                 .wpcf7-form{
-                    @apply flex gap-4 w-3/4;
+                    @apply flex flex-col gap-4 w-full px-2 text-center;
                 }
                 .wpcf7-form > p > .your-name::before{
                     @apply absolute;
@@ -47,6 +47,9 @@
                 .wpcf7-form > p > .wpcf7-form-control{
                     @apply p-4 bg-bell-purple-dark text-bell-gray-1 font-semibold;
                 }
+                .wpcf7-form > p{
+                    @apply flex flex-col;
+                }
             }
         }
 }
@@ -65,6 +68,9 @@
         }
         .newsletter-form{
             .wpcf7{
+                .wpcf7-form{
+                    @apply flex-row w-3/4;
+                }
                 .wpcf7-form > p > .wpcf7-form-control-wrap > .wpcf7-form-control{
                     @apply py-4 px-10 w-full;
                 }

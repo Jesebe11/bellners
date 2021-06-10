@@ -11,17 +11,39 @@ class Social extends WP_Widget {
         parent::__construct( 'social', 'Bell Social' ,$widget_options );
     }
 
-    // Back-end display of widget
-    public function form( $instance ) {
-        echo 'Sin opciones para mostrar';
+     // Back-end display of widget
+     public function form( $instance ) {
+
+        if( isset( $instance[ 'message' ] ) ) {
+            $message = $instance[ 'message' ];
+        } else {
+            $message = '';
+        }
+
+        ?>
+
+        <p>
+            <label for="<?php echo $this->get_field_id( 'message' ); ?>"><?php _e( 'Message:' ); ?></label>
+            <input class="widefat" id="<?php echo $this->get_field_id( 'message' ); ?>" name="<?php echo $this->get_field_name( 'message' ); ?>" type="text" value="<?php echo esc_attr( $message ); ?>" />
+        </p>
+
+
+
+        <?php
     }
 
     // Front-end display of widget
     public function widget( $args, $instance ) {
 
+        extract( $args );
+        $message = apply_filters( 'widget_message', $instance['message'] );
+
         echo $args[ 'before_widget' ];
 
         ?>
+        <?php if( $message !== '' ) : ?>
+        <h2 class="message"><?= $message; ?></h2>
+        <?php endif; ?>
 
         <ul class="social">
             <li class="social__item">

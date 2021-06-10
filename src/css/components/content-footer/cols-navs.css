@@ -1,7 +1,7 @@
 .footer-blocks{
-    @apply bg-bell-gray-3 flex flex-wrap flex-col text-bell-gray-2 justify-center p-4;
+    @apply bg-bell-gray-3 flex flex-wrap flex-col text-bell-gray-2 items-center p-4;
         .widget_nav_menu{
-            @apply w-1/4 flex flex-col;
+            @apply w-full flex flex-col border-b-2 border-bell-purple-dark;
             .widget-title{
                 @apply text-4xl font-bold;
             }
@@ -21,5 +21,8 @@
 @screen lg{
     .footer-blocks{
         @apply flex-row items-center h-64 justify-center;
+            .widget_nav_menu{
+                @apply border-none w-1/4;
+            }
     }
 }
