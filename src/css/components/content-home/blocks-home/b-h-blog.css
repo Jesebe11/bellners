@@ -1,8 +1,50 @@
 .block-home{
     &__blog{
-        @apply flex;
-            &__item{
-                @apply text-justify;
+        @apply flex gap-4 max-w-full overflow-scroll py-2;
+            .item{
+                @apply border border-bell-purple-dark flex flex-col gap-2 rounded-md translate-y-4 shadow-2xl transform transition duration-500;
+                min-width: 90%;
+                &__title{
+                    @apply text-2xl font-bold text-bell-gray px-4 ;
+                        &:hover{
+                            @apply text-bell-white underline;
+                        }
+                }
+                &__excerpt > p{
+                    @apply p-6 text-sm;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 6;
+                    line-clamp: 6;
+                    overflow: hidden;
+                }
+                &__info{
+                    @apply flex text-bell-gray-1 text-sm font-bold gap-2 w-full px-4 ;
+                        .tags{
+                            @apply text-bell-gray;
+                                &:hover{
+                                    @apply text-bell-white underline;
+                                }
+                        }
+                }
+                &__img{
+                    @apply min-w-full p-2;
+                }
+                &:hover{
+                    @apply translate-y-2 cursor-pointer bg-bell-purple-dark text-bell-white;
+                }
             }
+    }
+}
+@screen lg{
+    .block-home{
+        &__blog{
+            @apply max-w-none;
+            scrollbar-width: none;
+            overflow: unset;
+                .item{
+                    @apply min-w-0  w-1/3;
+                }
+        }
     }
 }

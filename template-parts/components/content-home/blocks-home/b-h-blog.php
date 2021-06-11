@@ -19,20 +19,19 @@ $the_query = new WP_Query( $args);
                 $the_query->the_post();
                 $title = get_the_title();
                 $permalink = esc_url(get_the_permalink());
-                $excerpt = get_the_excerpt();
             ?>
                 <div class="item">
-                    <?= get_the_post_thumbnail( $post->ID, 'medium' ); ?>
+                    <?= get_the_post_thumbnail( $post->ID, 'medium', array('class' => 'item__img') ); ?>
                     <div class="item__info">
-                        <p><?  echo get_the_date( 'ymd' ) ?></p>
-                        <p> <? the_tags(  ) ?>
+                        <p><?  echo get_the_date( 'D/M/Y' ) ?></p> -
+                        <p class="tags"> <? the_tags( '', ', ', '<br />' ) ?> </p>
                     </div>
                     <a class="item__title" href=" <?= $permalink; ?> ">
                         <h2><?= $title; ?></h2>
                     </a>
-                    <p class="item__excerpt">
-                        <? echo $excerpt; ?>
-                    </p>
+                    <div class="item__excerpt">
+                        <? the_excerpt(  ); ?>
+                    </div>
                 </div>
 
 
