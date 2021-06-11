@@ -31,7 +31,7 @@ $the_query = new WP_Query( $args);
                         <h2><?= $title; ?></h2>
                     </a>
                     <p class="item__excerpt">
-                        <? $excerpt; ?>
+                        <? echo $excerpt; ?>
                     </p>
                 </div>
 

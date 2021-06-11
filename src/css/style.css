@@ -5,6 +5,7 @@
 @import './content-header.css';
 @import './content-home.css';
 @import './content-footer.css';
+@import './widgets.css';
 
 
 /**/@import 'tailwindcss/utilities';
@@ -14,7 +15,7 @@
         .main{
             @apply w-full flex-col flex items-center;
                 .block-home-title{
-                    @apply text-4xl font-extrabold text-bell-purple-dark border-bell-purple-dark border-b-2 border-opacity-50;
+                    @apply text-4xl font-extrabold text-bell-purple-dark border-bell-purple-dark border-b-2 border-opacity-50 my-8;
                 }
                 .block-home{
                     @apply flex flex-col w-full px-2;
