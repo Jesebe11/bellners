@@ -2,16 +2,16 @@
     &__blog{
         @apply flex gap-4 max-w-full overflow-scroll py-2;
             .item{
-                @apply border border-bell-purple-dark flex flex-col gap-2 rounded-md translate-y-4 shadow-2xl transform transition duration-500;
+                @apply border border-bell-purple-dark flex flex-col gap-2 rounded-md translate-y-4 shadow-2xl transform transition duration-500 p-4;
                 min-width: 90%;
                 &__title{
-                    @apply text-2xl font-bold text-bell-gray px-4 ;
+                    @apply text-2xl font-bold text-bell-gray;
                         &:hover{
                             @apply text-bell-white underline;
                         }
                 }
                 &__excerpt > p{
-                    @apply p-6 text-sm;
+                    @apply text-sm italic;
                     display: -webkit-box;
                     -webkit-box-orient: vertical;
                     -webkit-line-clamp: 6;
@@ -19,7 +19,7 @@
                     overflow: hidden;
                 }
                 &__info{
-                    @apply flex text-bell-gray-1 text-sm font-bold gap-2 w-full px-4 ;
+                    @apply flex text-bell-gray-1 text-sm font-bold gap-2 w-full;
                         .tags{
                             @apply text-bell-gray;
                                 &:hover{
@@ -28,10 +28,10 @@
                         }
                 }
                 &__img{
-                    @apply min-w-full p-2;
+                    @apply min-w-full;
                 }
                 &:hover{
-                    @apply translate-y-2 cursor-pointer bg-bell-purple-dark text-bell-white;
+                    @apply translate-y-2 cursor-pointer bg-bell-purple-dark-1 text-bell-white;
                 }
             }
     }
