@@ -31,7 +31,7 @@
                     @apply min-w-full;
                 }
                 &:hover{
-                    @apply translate-y-2 cursor-pointer bg-bell-purple-dark-1 text-bell-white;
+                    @apply translate-y-2 cursor-pointer bg-bell-purple-dark text-bell-white;
                 }
             }
     }
