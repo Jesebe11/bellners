@@ -1,13 +1,14 @@
 .block-home{
     &__clients{
-        @apply flex flex-wrap justify-center items-center;
+        @apply flex flex-col justify-center items-center;
         .list{
-            @apply flex w-full justify-around flex-wrap;
+            @apply flex max-w-full overflow-scroll gap-8;
                 .item{
-                    @apply border-r-2 border-bell-purple-dark flex justify-center items-center w-1/6 transform transition duration-300;
+                    @apply border-r-2 border-bell-purple-dark bg-bell-purple-dark bg-opacity-25 h-32 flex justify-center items-center transform transition duration-300;
                     box-shadow: 1px 1px 25px -8px #360147;
+                    min-width: 40%;
                     &:hover{
-                        @apply translate-x-4 shadow-none;
+                        @apply translate-x-4 shadow-none bg-transparent;
                     }
 
                 }
@@ -16,4 +17,18 @@
                 }
         }
     }
+}
+@screen lg{
+    .block-home{
+    &__clients{
+        .list{
+            @apply max-w-none w-full justify-center items-center;
+            scrollbar-width: none;
+            overflow: unset;
+                .item{
+                    @apply  min-w-0 w-1/6;
+                }
+        }
+    }
+}
 }
