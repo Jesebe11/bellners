@@ -1,0 +1,8 @@
+.container-parallax{
+    @apply w-full my-4;
+        .parallax{
+            @apply bg-cover bg-fixed;
+            height:400px;
+            background-image:url('https://i.postimg.cc/m2Wd4hQc/startup-593341-1920.jpg');
+        }
+}
