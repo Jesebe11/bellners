@@ -10,6 +10,8 @@
             get_template_part( 'template-parts/components/content-home/blocks-home/b-h-service' );
         get_template_part( 'template-parts/components/content-home/titles-home/titles-home' , '' , ['title' => 'Nuestro Portafolio'] );
             get_template_part( 'template-parts/components/content-home/blocks-home/b-h-portfolio' );
+        get_template_part( 'template-parts/components/content-home/titles-home/titles-home' , '' , ['title' => 'Nuestros clientes'] );
+            get_template_part( 'template-parts/components/content-home/blocks-home/b-h-clients' );
         get_template_part( 'template-parts/components/content-home/titles-home/titles-home' , '' , ['title' => 'Blog'] );
             get_template_part( 'template-parts/components/content-home/blocks-home/b-h-blog' );
 

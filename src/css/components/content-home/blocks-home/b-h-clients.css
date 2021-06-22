@@ -1,0 +1,19 @@
+.block-home{
+    &__clients{
+        @apply flex flex-wrap justify-center items-center;
+        .list{
+            @apply flex w-full justify-around flex-wrap;
+                .item{
+                    @apply border-r-2 border-bell-purple-dark flex justify-center items-center w-1/6 transform transition duration-300;
+                    box-shadow: 1px 1px 25px -8px #360147;
+                    &:hover{
+                        @apply translate-x-4 shadow-none;
+                    }
+
+                }
+                .item > a > img{
+                    @apply p-2;
+                }
+        }
+    }
+}
