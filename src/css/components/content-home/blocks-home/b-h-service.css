@@ -79,3 +79,8 @@
         perspective: 1000px;
     }
 }
+@screen xl{
+    .container__card{
+        @apply grid-cols-3 justify-center grid;
+    }
+}
