@@ -73,14 +73,12 @@
 }
 @screen lg{
     .container__card{
-        @apply flex flex-wrap gap-8 py-4 justify-center max-w-none;
+        @apply grid-cols-3 justify-center grid max-w-none;
         scrollbar-width: none;
         overflow: unset;
         perspective: 1000px;
     }
-}
-@screen xl{
-    .container__card{
-        @apply grid-cols-3 justify-center grid;
+    .card{
+        @apply w-full;
     }
 }
