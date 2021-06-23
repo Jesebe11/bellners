@@ -2,18 +2,42 @@
     @apply w-full my-4;
         .parallax{
             @apply bg-cover bg-fixed bg-opacity-50 text-bell-white flex flex-col justify-center items-center;
-            height:400px;
             background-image:url('https://i.postimg.cc/m2Wd4hQc/startup-593341-1920.jpg');
-                &__title{
-                    @apply text-4xl font-bold bg-bell-gray-2 bg-opacity-50 p-8 w-full h-full items-center;
-                }
-                .list{
-                    @apply bg-bell-gray-2 bg-opacity-50 flex gap-8 w-full h-full px-32 py-4 items-start;
-                        &__item{
-                            &__number{
-                                @apply text-4xl font-extrabold text-bell-purple-dark;
+                &__info{
+                    @apply bg-bell-gray-2 bg-opacity-75 w-full h-full flex flex-col justify-center px-4 gap-16;
+                    &__title{
+                        @apply text-5xl font-bold text-bell-gray-1;
+                    }
+                    .list{
+                        @apply flex flex-col gap-8 px-0;
+                            &__item{
+                                @apply font-bold text-2xl flex items-center gap-4;
+                                    &--people:before{
+                                        content: url(https://i.postimg.cc/PrLYw7YL/target.png);
+                                    }
+                                    &--tasks:before{
+                                        content: url(https://i.postimg.cc/HWvbjmcD/clipboard.png);
+                                    }
+                                    &--files:before{
+                                        content: url(https://i.postimg.cc/CLWDH4sc/project-management.png);
+                                    }
+                                &__number > span{
+                                    @apply text-4xl font-extrabold text-bell-purple-dark flex flex-col;
+                                }
                             }
-                        }
+                    }
                 }
         }
+}
+@screen lg{
+    .container-parallax{
+            .parallax{
+                    &__info{
+                        @apply p-12 items-start;
+                        .list{
+                            @apply flex flex-row px-24;
+                        }
+                    }
+            }
+    }
 }
