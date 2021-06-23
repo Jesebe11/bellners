@@ -1,4 +1,4 @@
-.block-home{
+.block-general{
     &__clients{
         @apply flex flex-col justify-center items-center;
         .list{
@@ -19,7 +19,7 @@
     }
 }
 @screen lg{
-    .block-home{
+    .block-general{
     &__clients{
         .list{
             @apply max-w-none w-full justify-center items-center;

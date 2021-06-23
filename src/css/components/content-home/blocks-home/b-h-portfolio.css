@@ -1,4 +1,4 @@
-.block-home__portfolio{
+.block-general__portfolio{
 		@apply flex flex-wrap gap-8 justify-center;
 }
 .content {

@@ -1,4 +1,4 @@
-.block-home{
+.block-general{
     &__blog{
         @apply flex gap-4 max-w-full overflow-scroll py-2;
             .item{
@@ -37,7 +37,7 @@
     }
 }
 @screen lg{
-    .block-home{
+    .block-general{
         &__blog{
             @apply max-w-none;
             scrollbar-width: none;

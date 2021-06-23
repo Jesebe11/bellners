@@ -14,18 +14,18 @@
     @apply flex flex-col items-center text-bell-gray w-full gap-10;
         .main{
             @apply w-full flex-col flex items-center;
-                .block-home-title{
-                    @apply text-4xl font-extrabold text-bell-purple-dark border-bell-purple-dark border-b-2 border-opacity-50 my-8 flex justify-between px-2 items-center;
-                }
-                .block-home-title > a{
-                    @apply transform translate-x-1 transition duration-300;
-                        &:hover{
-                            @apply translate-x-4;
-                        }
-                }
-                .block-home{
-                    @apply flex flex-col w-full px-2 mb-8;
-                }
+            .block-general{
+                @apply flex flex-col w-full px-2 mb-8;
+            }
+            .block-general-title{
+                @apply text-4xl font-extrabold text-bell-purple-dark border-bell-purple-dark border-b-2 border-opacity-50 my-8 flex justify-between px-2 items-center;
+            }
+            .block-general-title > a{
+                @apply transform translate-x-1 transition duration-300;
+                    &:hover{
+                        @apply translate-x-4;
+                    }
+            }
         }
 }
 html{
@@ -34,7 +34,7 @@ html{
 @screen lg{
     .site{
         .main{
-            .block-home{
+            .block-general{
                 @apply w-4/5;
             }
         }

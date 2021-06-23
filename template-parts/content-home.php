@@ -3,7 +3,7 @@
     get_template_part( 'template-parts/components/content-home/slider-primary' );
 
 ?>
-<div class="block-home">
+<div class="block-general">
     <?php
 
         get_template_part( 'template-parts/components/content-home/titles-home/titles-home' , '' , ['title' => 'Servicios'] );
@@ -20,7 +20,7 @@
 
 ?>
 
-<div class="block-home">
+<div class="block-general">
     <?php
 
         get_template_part( 'template-parts/components/content-home/titles-home/titles-home' , '' , ['title' => 'Nuestros clientes'] );

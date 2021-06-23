@@ -12,7 +12,7 @@ $args = [
 $the_query = new WP_Query( $args);
 
 ?>
-<section class="block-home__portfolio">
+<section class="block-general__portfolio">
         <?php if( $the_query->have_posts() ) : ?>
             <?php while( $the_query->have_posts() ) :
                 $the_query->the_post();
