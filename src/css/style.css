@@ -3,8 +3,9 @@
 /**/@import 'tailwindcss/components';
 
 @import './content-header.css';
-@import './content-home.css';
 @import './content-footer.css';
+@import './content-home.css';
+@import './components/content-blog/section.css';
 @import './content-reusables.css';
 @import './widgets.css';
 
@@ -16,7 +17,8 @@
         .main{
             @apply w-full flex-col flex items-center;
             .block-general{
-                @apply flex flex-col w-full px-2 mb-8;
+                @apply flex flex-col w-full px-2 mb-8 ;
+                box-shadow: inset 0 20px 20px -20px rgba(54, 1, 71, 0.6);
             }
             .block-general-title{
                 @apply text-5xl font-extrabold text-bell-purple-dark border-bell-purple-dark border-b-2 border-opacity-50 my-8 flex justify-between px-2 items-center;
@@ -36,7 +38,7 @@ html{
     .site{
         .main{
             .block-general{
-                @apply w-4/5;
+                @apply w-4/5 gap-8;
             }
         }
     }

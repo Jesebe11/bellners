@@ -1,0 +1,9 @@
+.split-section{
+    @apply flex flex-row justify-between p-4;
+        &__normal{
+            @apply w-2/3;
+        }
+        &__sidebar{
+            @apply w-1/4;
+        }
+}
