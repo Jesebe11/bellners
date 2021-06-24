@@ -1,6 +1,6 @@
 <div class="block-general">
     <?php
-        get_template_part( 'template-parts/components/content-home/titles-home/titles-home');
+        get_template_part( 'template-parts/components/reusables/titles/titles');
     ?>
 
 </div>
