@@ -1,3 +1,6 @@
 <div class="block-general">
-    hola
+    <?php
+        get_template_part( 'template-parts/components/content-home/titles-home/titles-home');
+    ?>
+
 </div>
