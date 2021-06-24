@@ -1,21 +1,22 @@
 .split-section{
     &__normal{
         &__blogs{
-        @apply flex flex-col gap-16;
+        @apply flex gap-4 min-w-full overflow-scroll;
             .item-blog{
                 @apply flex flex-col gap-2 border-b-2 border-bell-purple-dark shadow-2xl;
+                min-width: 90%;
                 &__title{
-                    @apply text-3xl font-bold text-bell-gray-3 bg-bell-purple-dark
+                    @apply text-base font-bold text-bell-gray-3 bg-bell-purple-dark
                     transition duration-500 p-4;
                         &:hover{
                             @apply text-bell-purple-dark bg-bell-white;
                         }
-                    }
+                }
                 &__img{
                     @apply min-w-full;
                 }
                 &__list{
-                    @apply inline-flex gap-8 p-4 text-bell-purple-dark italic;
+                    @apply flex flex-wrap text-bell-purple-dark italic;
                         &__item{
                             @apply flex gap-2 p-2;
                             &:hover{
@@ -30,13 +31,14 @@
                             &--author:before{
                                 content: url(https://i.postimg.cc/nLh3c64C/pencil.png);
                             }
+
                             &--comments:before{
                                 content: url(https://i.postimg.cc/Dm327fLk/chat.png);
                             }
                         }
                 }
                 &__excerpt{
-                    @apply p-8 text-justify text-lg italic;
+                    @apply text-justify text-base italic px-2;
                 }
                 &__excerpt > p{
                     display: -webkit-box;
@@ -44,6 +46,29 @@
                     -webkit-line-clamp: 4;
                     line-clamp: 4;
                     overflow: hidden;
+                }
+            }
+        }
+    }
+}
+@screen lg{
+    .split-section{
+        &__normal{
+            &__blogs{
+            @apply flex flex-col gap-16 min-w-0;
+            scrollbar-width: none;
+            overflow: unset;
+                .item-blog{
+                    @apply min-w-0;
+                    &__title{
+                        @apply text-3xl;
+                    }
+                        &__list{
+                            @apply inline-flex gap-8 p-4;
+                    }
+                    &__excerpt{
+                        @apply p-8 text-lg;
+                    }
                 }
             }
         }

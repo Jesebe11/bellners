@@ -37,7 +37,7 @@ $the_query = new WP_Query( $args);
                     </ul>
                     <?= get_the_post_thumbnail( $post->ID, 'large', array('class' => 'item-blog__img') ); ?>
                     <div class="item-blog__excerpt">
-                        <? the_content(  ); ?>
+                        <? the_excerpt(  ); ?>
                     </div>
                 </article>
 

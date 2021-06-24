@@ -1,9 +1,21 @@
 .split-section{
-    @apply flex flex-row justify-between p-4;
+    @apply flex flex-col justify-between p-0;
+        &__normal{
+            @apply w-full;
+        }
+        &__sidebar{
+            @apply w-full;
+        }
+}
+@screen lg{
+
+    .split-section{
+        @apply flex flex-row p-4;
         &__normal{
             @apply w-2/3;
         }
         &__sidebar{
             @apply w-1/4;
         }
+    }
 }
