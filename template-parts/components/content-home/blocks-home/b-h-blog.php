@@ -6,7 +6,7 @@ $args = [
     'orderby' => 'date',
     'order' => 'DESC',
     'posts_per_page' => 3,
-    'category_name' => 'blog'
+    'category_name' => 'blogs'
 ];
 
 $the_query = new WP_Query( $args);
