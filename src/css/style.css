@@ -5,6 +5,7 @@
 @import './content-header.css';
 @import './content-home.css';
 @import './content-footer.css';
+@import './content-reusables.css';
 @import './widgets.css';
 
 
@@ -18,7 +19,7 @@
                 @apply flex flex-col w-full px-2 mb-8;
             }
             .block-general-title{
-                @apply text-4xl font-extrabold text-bell-purple-dark border-bell-purple-dark border-b-2 border-opacity-50 my-8 flex justify-between px-2 items-center;
+                @apply text-5xl font-extrabold text-bell-purple-dark border-bell-purple-dark border-b-2 border-opacity-50 my-8 flex justify-between px-2 items-center;
             }
             .block-general-title > a{
                 @apply transform translate-x-1 transition duration-300;
