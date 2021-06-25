@@ -29,11 +29,14 @@
                                 content: url(https://i.postimg.cc/2jbhjHh2/tag.png);
                             }
                             &--author:before{
-                                content: url(https://i.postimg.cc/nLh3c64C/pencil.png);
+                                content: url(https://i.postimg.cc/T1jQFQxv/user.png);
                             }
 
                             &--comments:before{
                                 content: url(https://i.postimg.cc/Dm327fLk/chat.png);
+                            }
+                            &--edit:before{
+                                content: url(https://i.postimg.cc/nLh3c64C/pencil.png)
                             }
                         }
                 }
@@ -64,7 +67,7 @@
                         @apply text-3xl;
                     }
                         &__list{
-                            @apply inline-flex gap-8 p-4;
+                            @apply inline-flex gap-2;
                     }
                     &__excerpt{
                         @apply p-8 text-lg;
