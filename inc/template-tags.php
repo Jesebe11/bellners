@@ -100,7 +100,10 @@ if ( ! function_exists( 'bellners_post_thumbnail' ) ) :
 			?>
 
 			<div class="item-blog__img">
-				<?php the_post_thumbnail( ); ?>
+				<?php the_post_thumbnail(
+					array(
+						'class' => 'item-blog__img'
+		) ); ?>
 			</div>
 
 		<?php else : ?>
@@ -108,14 +111,7 @@ if ( ! function_exists( 'bellners_post_thumbnail' ) ) :
 			<a class="item-blog__img" href="<?php the_permalink(); ?>" aria-hidden="true" tabindex="-1">
 				<?php
 					the_post_thumbnail(
-						'item-blog__img',
-						array(
-							'alt' => the_title_attribute(
-								array(
-									'echo' => false,
-								)
-							),
-						)
+						'full', array('class' => 'item-blog__img')
 					);
 				?>
 			</a>
