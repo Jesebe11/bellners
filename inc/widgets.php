@@ -52,20 +52,9 @@ function bellners_widgets_init() {
 	);
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Bell Seccion casos de estudio', 'bellners' ),
-			'id'            => 'section-casos-de-estudio',
-			'description'   => esc_html__( 'Añade elementos a la sección casos de estudio', 'bellners' ),
-			'before_widget' => '<section id="%1$s" class="widget %2$s">',
-			'after_widget'  => '</section>',
-			'before_title'  => '<h2 class="widget-title">',
-			'after_title'   => '</h2>',
-		)
-	);
-	register_sidebar(
-		array(
-			'name'          => esc_html__( 'Bell Seccion proyectos', 'bellners' ),
-			'id'            => 'section-proyectos',
-			'description'   => esc_html__( 'Añade elementos a la sección proyectos', 'bellners' ),
+			'name'          => esc_html__( 'Bell Seccion portafolio', 'bellners' ),
+			'id'            => 'section-portafolio',
+			'description'   => esc_html__( 'Añade elementos a la sección portafolio', 'bellners' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget-title">',
@@ -77,6 +66,17 @@ function bellners_widgets_init() {
 			'name'          => esc_html__( 'Bell Seccion servicios', 'bellners' ),
 			'id'            => 'section-servicios',
 			'description'   => esc_html__( 'Añade elementos a la sección servicios', 'bellners' ),
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h2 class="widget-title">',
+			'after_title'   => '</h2>',
+		)
+	);
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Bell Seccion por defecto', 'bellners' ),
+			'id'            => 'section-default',
+			'description'   => esc_html__( 'Añade elementos a la sección defecto', 'bellners' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget-title">',

@@ -2,9 +2,9 @@
         <?php if( is_active_sidebar( 'section-blogs' ) ) {
             dynamic_sidebar( 'section-blogs' );
         } ?>
-    <?php elseif(is_category( 'proyectos' )) : ?>
-        <?php if( is_active_sidebar( 'section-proyectos' ) ) {
-            dynamic_sidebar( 'section-proyectos' );
+    <?php elseif(is_category( 'portafolio' )) : ?>
+        <?php if( is_active_sidebar( 'section-portafolio' ) ) {
+            dynamic_sidebar( 'section-portafolio' );
         } ?>
         <?php elseif(is_category( 'clientes' )) : ?>
         <?php if( is_active_sidebar( 'section-clientes' ) ) {
@@ -14,11 +14,8 @@
         <?php if( is_active_sidebar( 'section-servicios' ) ) {
             dynamic_sidebar( 'section-servicios' );
         } ?>
-        <?php elseif(is_category( 'casos-de-estudio' )) : ?>
-        <?php if( is_active_sidebar( 'section-casos-de-estudio' ) ) {
-            dynamic_sidebar( 'section-casos-de-estudio' );
-        } ?>
                 <?php else : ?>
-                    <?php echo ('No hay un sidebar para esta seccion') ?>
-
+                    <?php if( is_active_sidebar( 'section-default' ) ) {
+                    dynamic_sidebar( 'section-default' );
+                    } ?>
         <?php endif; ?>
