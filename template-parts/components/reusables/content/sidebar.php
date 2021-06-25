@@ -1,3 +1,5 @@
+<div class="split-section__sidebar__content">
+
 <?php if( is_category( 'blogs' ) ) :  ?>
         <?php if( is_active_sidebar( 'section-blogs' ) ) {
             dynamic_sidebar( 'section-blogs' );
@@ -18,4 +20,5 @@
                     <?php if( is_active_sidebar( 'section-default' ) ) {
                     dynamic_sidebar( 'section-default' );
                     } ?>
-        <?php endif; ?>
+<?php endif; ?>
+</div>

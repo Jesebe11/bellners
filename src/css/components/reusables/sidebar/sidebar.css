@@ -1,0 +1,6 @@
+.split-section__sidebar{
+    @apply bg-bell-gray-1 h-full;
+        &__content{
+            @apply h-full fixed;
+        }
+}

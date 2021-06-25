@@ -58,19 +58,19 @@
     .split-section{
         &__normal{
             &__blogs{
-            @apply flex flex-col gap-16 min-w-0;
+            @apply grid grid-cols-2 min-w-0;
             scrollbar-width: none;
             overflow: unset;
                 .item-blog{
                     @apply min-w-0;
                     &__title{
-                        @apply text-3xl;
+                        @apply text-xl;
                     }
                         &__list{
                             @apply inline-flex gap-2;
                     }
                     &__excerpt{
-                        @apply p-8 text-lg;
+                        @apply p-2 text-lg;
                     }
                 }
             }
