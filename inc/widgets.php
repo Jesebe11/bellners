@@ -75,7 +75,7 @@ function bellners_widgets_init() {
 	register_sidebar(
 		array(
 			'name'          => esc_html__( 'Bell Seccion servicios', 'bellners' ),
-			'id'            => 'page-servicios',
+			'id'            => 'section-servicios',
 			'description'   => esc_html__( 'Añade elementos a la sección servicios', 'bellners' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
