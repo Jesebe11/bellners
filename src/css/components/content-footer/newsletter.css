@@ -33,13 +33,13 @@
                     @apply absolute;
                     left: 1%;
                     top: 1%;
-                    content: url('https://i.postimg.cc/Kj50yh5w/user.png');
+                    content: url(https://i.postimg.cc/T1jQFQxv/user.png);
                 }
                 .wpcf7-form > p > .your-email::before{
                     @apply absolute;
                     left: 1%;
                     top: 1%;
-                    content: url('https://i.postimg.cc/YSShhFdZ/email.png');
+                    content: url(https://i.postimg.cc/YSShhFdZ/email.png);
                 }
                 .wpcf7-form > p > .wpcf7-form-control-wrap > .wpcf7-form-control{
                     @apply p-2 bg-bell-white w-2/3;
