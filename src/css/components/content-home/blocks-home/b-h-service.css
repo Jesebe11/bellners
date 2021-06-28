@@ -51,7 +51,7 @@
 }
 
 .body__card_back{
-    @apply p-6 text-center;
+    @apply p-6 text-center flex flex-col gap-8;
     transform: translateZ(60px);
 }
 .body__card_back > h1{
@@ -59,7 +59,12 @@
 }
 
 .body__card_back p{
-    @apply text-bell-gray-2 text-base py-2;
+    @apply text-bell-gray-2 text-base;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 4;
+                    line-clamp: 4;
+                    overflow: hidden;
 }
 
 .body__card_back input{
