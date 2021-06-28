@@ -1,0 +1,57 @@
+.block-general{
+    &__about{
+        @apply flex flex-col gap-8;
+            .the-content{
+                @apply flex flex-col gap-4 bg-bell-gray-1 text-xl text-bell-gray-2;
+                    .wp-block-media-text{
+                        @apply p-4 text-base shadow-2xl transform translate-y-2 ;
+                        .wp-block-media-text__content > h2{
+                            @apply text-4xl font-bold text-left text-bell-purple-dark;
+                        }
+                    }
+            }
+        .team{
+            &__list{
+                @apply flex flex-row gap-4 max-w-full overflow-scroll;
+                &__item{
+                    @apply shadow-2xl p-2 flex flex-col items-center bg-bell-gray-2 text-bell-gray-3 rounded-md;
+                        min-width: 80%;
+                    .name{
+                            @apply font-bold text-2xl;
+                        }
+                        .area{
+                            @apply text-base italic text-opacity-25;
+                        }
+                        .social{
+                            @apply inline-flex gap-2;
+                        }
+                        .social > li > a > img{
+                            @apply transform transition duration-300;
+                            &:hover{
+                                @apply scale-125;
+                            }
+                        }
+                }
+                &__item > img{
+                    @apply w-2/5 rounded-full shadow-2xl;
+                }
+            }
+        }
+    }
+}
+@screen lg{
+    .block-general{
+        &__about{
+            .team{
+                &__list{
+                    @apply max-w-none;
+                    scrollbar-width: none;
+                    overflow: unset;
+                        &__item{
+                            @apply min-w-0  w-1/3;
+                        }
+                }
+            }
+        }
+    }
+}
