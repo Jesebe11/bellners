@@ -1,0 +1,67 @@
+.block-general{
+    &__contact{
+        @apply flex flex-col;/**este flex*/
+        .the-content{
+            @apply bg-bell-gray-2 w-full flex justify-center p-4;
+                .wp-block-contact-form-7-contact-form-selector{
+                    .wpcf7{
+                        .wpcf7-form > p{
+                            .wpcf7-form-control-wrap > .wpcf7-form-control{
+                                @apply bg-transparent p-4 border-b-2 border-bell-gray-3 outline-none text-lg text-bell-gray-3 w-11/12 text-center;
+                            }
+                            .wpcf7-submit{
+                                @apply bg-bell-gray-3 text-bell-purple-dark px-4 py-2 font-bold transition duration-500 cursor-pointer;
+                                    &:hover{
+                                        @apply bg-bell-purple-dark text-bell-gray-3;
+                                    }
+                            }
+                            .wpcf7-response-output{
+                                @apply text-bell-gray-3 text-lg;
+                            }
+                        }
+                    }
+                }
+        }
+            &__info{
+                @apply w-full flex flex-col justify-center items-center gap-4;
+                background-image: url(https://cdn.pixabay.com/photo/2015/05/31/10/55/man-791049_960_720.jpg);
+                    .info-content{
+                        @apply bg-bell-gray-3 bg-opacity-75 text-2xl font-bold p-8 text-bell-purple-dark shadow-2xl flex flex-col gap-4;
+
+                            &--phone::before{
+                                content: url(https://i.postimg.cc/hG3hxGwj/viber.png);
+                            }
+                            &--email::before{
+                                content: url(https://i.postimg.cc/YSShhFdZ/email.png);
+                            }
+                    }
+                    .info-content > p {
+                        @apply text-lg text-bell-gray-2 px-2;
+                    }
+            }
+    }
+}
+
+@screen lg{
+    .block-general{
+        &__contact{
+            @apply flex flex-row;
+            .the-content{
+                @apply bg-bell-gray-2 w-1/2 p-8;
+                    .wp-block-contact-form-7-contact-form-selector{
+                        .wpcf7{
+                            .wpcf7-form > p{
+                                .wpcf7-form-control-wrap > .wpcf7-form-control{
+                                    @apply w-full;
+                                }
+                            }
+                        }
+                    }
+            }
+                &__info{
+                    @apply w-1/2 z-20;
+                    left: 15%;
+                }
+        }
+    }
+}
