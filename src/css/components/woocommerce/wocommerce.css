@@ -44,42 +44,18 @@ table.shop_table_responsive tr td.download-actions .button {
 	text-align: center;
 }
 
-@media screen and (min-width: 48em) {
 
-	table.shop_table_responsive thead {
-		display: table-header-group;
-	}
 
-	table.shop_table_responsive tbody th {
-		display: table-cell;
-	}
-
-	table.shop_table_responsive tr th,
-	table.shop_table_responsive tr td {
-		text-align: left;
-	}
-
-	table.shop_table_responsive tr td {
-		display: table-cell;
-	}
-
-	table.shop_table_responsive tr td::before {
-		display: none;
-	}
-}
-
-/**
- * Products
- */
 ul.products {
-	margin: 0;
-	padding: 0;
+	@apply flex flex-row min-w-full overflow-scroll p-2 gap-4;
 }
 
 ul.products li.product {
-	list-style: none;
-	position: relative;
-	margin-bottom: 2em;
+	@apply list-none text-2xl flex flex-col gap-8 border-2 bg-bell-purple-dark text-bell-gray-3 border-bell-purple-dark shadow-2xl items-center transform transition duration-300 justify-center;
+	min-width: 80%;
+}
+ul.products li.product:hover{
+	@apply scale-105 bg-bell-gray-3 text-bell-purple-dark;
 }
 
 ul.products li.product img {
@@ -90,47 +66,6 @@ ul.products li.product .button {
 	display: block;
 }
 
-@media screen and (min-width: 48em) {
-
-	ul.products li.product {
-		width: 30.79667%;
-		float: left;
-		margin-right: 3.8%;
-	}
-
-	ul.products li.product.first {
-		clear: both;
-	}
-
-	ul.products li.product.last {
-		margin-right: 0;
-	}
-
-	ul.products.columns-1 li.product {
-		float: none;
-		width: 100%;
-	}
-
-	ul.products.columns-2 li.product {
-		width: 48.1%;
-	}
-
-	ul.products.columns-3 li.product {
-		width: 30.79667%;
-	}
-
-	ul.products.columns-4 li.product {
-		width: 22.15%;
-	}
-
-	ul.products.columns-5 li.product {
-		width: 16.96%;
-	}
-
-	ul.products.columns-6 li.product {
-		width: 13.49333%;
-	}
-}
 
 /**
  * Single product
@@ -499,70 +434,13 @@ p.no-comments {
 	}
 }
 
-/**
- * WooCommerce widgets
- */
-
-/**
- * WooCommerce Price Filter
- */
-.widget_price_filter .price_slider {
-	margin-bottom: 1.5em;
+@screen lg{
+	ul.products {
+		@apply grid grid-cols-3 gap-8 max-w-none;
+			scrollbar-width: none;
+            overflow: unset;
+	}
+	ul.products li.product {
+	@apply min-w-0;
+	}
 }
-
-.widget_price_filter .price_slider_amount {
-	text-align: right;
-	line-height: 2.4;
-}
-
-.widget_price_filter .price_slider_amount .button {
-	float: left;
-}
-
-.widget_price_filter .ui-slider {
-	position: relative;
-	text-align: left;
-}
-
-.widget_price_filter .ui-slider .ui-slider-handle {
-	position: absolute;
-	z-index: 2;
-	width: 1em;
-	height: 1em;
-	cursor: ew-resize;
-	outline: none;
-	background: #4169e1;
-	box-sizing: border-box;
-	margin-top: -0.25em;
-	opacity: 1;
-}
-
-.widget_price_filter .ui-slider .ui-slider-handle:last-child {
-	margin-left: -1em;
-}
-
-.widget_price_filter .ui-slider .ui-slider-handle:hover,
-.widget_price_filter .ui-slider .ui-slider-handle.ui-state-active {
-	box-shadow: 0 0 0 0.25em rgba(0, 0, 0, 0.1);
-}
-
-.widget_price_filter .ui-slider .ui-slider-range {
-	position: absolute;
-	z-index: 1;
-	display: block;
-	border: 0;
-	background: #4169e1;
-}
-
-.widget_price_filter .price_slider_wrapper .ui-widget-content {
-	background: rgba(0, 0, 0, 0.1);
-}
-
-.widget_price_filter .ui-slider-horizontal {
-	height: 0.5em;
-}
-
-.widget_price_filter .ui-slider-horizontal .ui-slider-range {
-	height: 100%;
-}
-

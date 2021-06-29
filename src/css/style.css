@@ -7,11 +7,11 @@
 @import './content-home.css';
 @import './content-contact.css';
 @import './content-about.css';
-@import './content.css';
 @import './content-reusables.css';
 @import './content-shop.css';
+@import './content.css';
 @import './widgets.css';
-@import './wocommerce.css';
+@import './woocommerce.css';
 
 
 /**/@import 'tailwindcss/utilities';

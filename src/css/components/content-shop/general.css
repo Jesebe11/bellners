@@ -1,9 +1,9 @@
 .block-general{
     &__filter-shop{
-        @apply bg-bell-purple-dark text-bell-gray-3 flex flex-col p-8 gap-8 items-center justify-center;
+        @apply bg-bell-gray-1 text-bell-purple-dark flex flex-col p-8 gap-8;
             .woocommerce-ordering{
                 .orderby{
-                    @apply bg-transparent border-2 border-bell-gray-3 rounded-md p-4 outline-none transition duration-300 cursor-pointer;
+                    @apply bg-transparent border-2 border-bell-purple-dark rounded-md p-4 outline-none transition duration-300 cursor-pointer;
                     &:hover{
                         @apply bg-bell-gray-3 text-bell-purple-dark;
                     }
