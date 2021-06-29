@@ -1,0 +1,16 @@
+.block-general{
+    &__filter-shop{
+        @apply bg-bell-purple-dark text-bell-gray-3 flex flex-col p-8 gap-8 items-center justify-center;
+            .woocommerce-ordering{
+                .orderby{
+                    @apply bg-transparent border-2 border-bell-gray-3 rounded-md p-4 outline-none transition duration-300 cursor-pointer;
+                    &:hover{
+                        @apply bg-bell-gray-3 text-bell-purple-dark;
+                    }
+                }
+                .orderby > option{
+                    @apply bg-bell-purple-dark border-b-2 border-bell-gray-3 text-bell-gray-3;
+                }
+            }
+    }
+}

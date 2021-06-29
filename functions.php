@@ -160,6 +160,12 @@ require get_template_directory() . '/inc/customizer.php';
  * Register widgets areas.
  */
 require get_template_directory() . '/inc/widgets.php';
+
+/**
+ * Register other functions.
+ */
+require get_template_directory() . '/inc/our-functions.php';
+
 /**
  * Widgets
  */
@@ -177,4 +183,5 @@ if ( defined( 'JETPACK__VERSION' ) ) {
  */
 if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/inc/woocommerce.php';
+	require get_template_directory() . '/inc/filters/remove-result-count.php';
 }

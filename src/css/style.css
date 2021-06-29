@@ -9,7 +9,9 @@
 @import './content-about.css';
 @import './content.css';
 @import './content-reusables.css';
+@import './content-shop.css';
 @import './widgets.css';
+@import './wocommerce.css';
 
 
 /**/@import 'tailwindcss/utilities';
