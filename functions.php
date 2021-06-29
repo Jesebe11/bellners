@@ -183,6 +183,7 @@ if ( defined( 'JETPACK__VERSION' ) ) {
  */
 if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/inc/woocommerce.php';
-	require get_template_directory() . '/inc/filters/remove-result-count.php';
+	require get_template_directory() . '/inc/removes/remove-result-count.php';
+	require get_template_directory() . '/inc/removes/reordered-list-product.php';
 	require get_template_directory() . '/inc/filters/change-sale-flash.php';
 }

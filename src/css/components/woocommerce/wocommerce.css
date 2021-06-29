@@ -47,23 +47,44 @@ table.shop_table_responsive tr td.download-actions .button {
 
 
 ul.products {
-	@apply flex flex-row min-w-full overflow-scroll p-2 gap-4;
+	@apply flex flex-row min-w-full overflow-scroll p-2 gap-8;
 }
 
 ul.products li.product {
-	@apply list-none text-2xl flex flex-col gap-8 border-2 bg-bell-purple-dark text-bell-gray-3 border-bell-purple-dark shadow-2xl items-center transform transition duration-300 justify-center;
+	@apply shadow-2xl border border-bell-gray bg-bell-gray-3 list-none text-xl flex flex-col gap-8 text-bell-gray-2 rounded-md transform transition duration-300 justify-center items-center py-2;
 	min-width: 80%;
 }
 ul.products li.product:hover{
-	@apply scale-105 bg-bell-gray-3 text-bell-purple-dark;
+	@apply shadow-xl scale-110;
 }
-
+ul.products li.product a .sale-flash{
+	left: -5%;
+	top: -8%;
+}
 ul.products li.product img {
 	display: block;
 }
-
+.woocommerce-LoopProduct-link{
+	@apply flex flex-col gap-6 items-center;
+}
+.woocommerce-LoopProduct-link h2{
+	@apply text-bell-purple-dark font-bold text-3xl italic;
+}
+.woocommerce-LoopProduct-link .price{
+	@apply text-green-800 text-center italic font-semibold text-2xl;
+}
+.woocommerce-LoopProduct-link .price del .amount {
+    @apply text-red-800 text-lg px-2;
+	text-decoration: line-through;
+}
 ul.products li.product .button {
 	display: block;
+}
+ul.products li .button{
+	@apply bg-bell-purple-dark font-bold px-4 py-2 text-bell-gray-3 transition duration-500 rounded-md;
+		&:hover{
+			@apply bg-bell-gray-1 text-bell-purple-dark;
+		}
 }
 
 
@@ -257,7 +278,7 @@ ul.products li.product .button {
 	top: 0;
 	position: absolute;
 	left: 0;
-	color: #4169e1;
+	color: #360147;
 }
 
 p.stars a {
@@ -294,13 +315,13 @@ p.stars a:hover ~ a::before {
 
 p.stars:hover a::before {
 	content: "\53";
-	color: #4169e1;
+	color: #9e9e9e;
 	opacity: 1;
 }
 
 p.stars.selected a.active::before {
 	content: "\53";
-	color: #4169e1;
+	color: #360147;
 	opacity: 1;
 }
 
@@ -312,7 +333,7 @@ p.stars.selected a.active ~ a::before {
 
 p.stars.selected a:not(.active)::before {
 	content: "\53";
-	color: #4169e1;
+	color: #360147;
 	opacity: 1;
 }
 
@@ -436,11 +457,17 @@ p.no-comments {
 
 @screen lg{
 	ul.products {
-		@apply grid grid-cols-3 gap-8 max-w-none;
-			scrollbar-width: none;
-            overflow: unset;
+		@apply max-w-none flex-wrap;
+		scrollbar-width: none;
+		overflow: unset;
 	}
-	ul.products li.product {
-	@apply min-w-0;
+		ul.products li.product {
+		@apply min-w-0;
+		width:30%;
+		}
+		ul.products li.product a .sale-flash{
+			@apply absolute;
+			left: -5%;
+			top: -8%;
+		}
 	}
-}
