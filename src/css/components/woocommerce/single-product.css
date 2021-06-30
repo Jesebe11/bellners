@@ -27,7 +27,7 @@
 	@apply cursor-pointer;
 }
 .woocommerce-tabs{
-	@apply w-full;
+	@apply w-full flex flex-col gap-8;/** con el .active para los tabs activos*/
 		.tabs{
 			@apply inline-flex gap-4;
 		}

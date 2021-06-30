@@ -8,7 +8,7 @@ remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_r
 function maybe_add_tab( $tabs ) {
 
     $tabs['related_items'] = array(
-        'title'    => __( 'You Might Also Like', 'textdomain' ), //Cambiamos nombre de la pestaña
+        'title'    => __( 'Te podria interesar', 'textdomain' ), //Cambiamos nombre de la pestaña
         'priority' => 90, // Establecemos dónde mostrar la pestaña
         'callback' => 'dl_mostrar_prod_relacc_en_pestana',
     );
