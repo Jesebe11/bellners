@@ -22,10 +22,10 @@ ul.products li.product img {
 .woocommerce-LoopProduct-link h2{
 	@apply text-bell-purple-dark font-bold text-3xl italic;
 }
-.woocommerce-LoopProduct-link .price{
-	@apply text-green-800 text-center italic font-semibold text-2xl;
+.price{
+	@apply text-green-800 italic font-semibold text-2xl;
 }
-.woocommerce-LoopProduct-link .price del .amount {
+.price del .amount {
     @apply text-red-800 text-lg px-2;
 	text-decoration: line-through;
 }

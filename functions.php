@@ -186,4 +186,6 @@ if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/inc/removes/remove-result-count.php';
 	require get_template_directory() . '/inc/removes/reordered-list-product.php';
 	require get_template_directory() . '/inc/filters/change-sale-flash.php';
+	require get_template_directory() . '/inc/reorder-tabs.php';
+	require get_template_directory() . '/inc/new-tab-product-cat.php';
 }

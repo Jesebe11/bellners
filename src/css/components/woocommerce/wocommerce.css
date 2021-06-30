@@ -187,30 +187,6 @@ p.stars.selected a:not(.active)::before {
 	opacity: 1;
 }
 
-/**
- * Tabs
- */
-.woocommerce-tabs ul.tabs {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	text-align: left;
-}
-
-.woocommerce-tabs ul.tabs li {
-	display: block;
-	margin: 0;
-	position: relative;
-}
-
-.woocommerce-tabs ul.tabs li a {
-	padding: 1em 0;
-	display: block;
-}
-
-.woocommerce-tabs .panel h2:first-of-type {
-	margin-bottom: 1em;
-}
 
 /**
  * Password strength meter

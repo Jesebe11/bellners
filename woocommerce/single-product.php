@@ -2,9 +2,7 @@
 
 get_header( ); ?>
 
-<main id="primary" class="main">
-	<div class="block-general">
-    <?php
+<?php
     /**
      * woocommerce_before_main_content hook
      *
@@ -12,7 +10,9 @@ get_header( ); ?>
      * @hooked woocommerce_breadcrumb - 20
      */
     do_action( 'woocommerce_before_main_content' );
-?>
+    ?>
+    <main id="primary" class="main">
+        <div class="block-general">
 		<?php while ( have_posts() ) : ?>
 			<?php the_post(); ?>
 
@@ -20,6 +20,8 @@ get_header( ); ?>
 
 		<?php endwhile; // end of the loop. ?>
 
+        </div>
+        </main>
         <?php
             /**
              * woocommerce_after_main_content hook.
@@ -29,15 +31,5 @@ get_header( ); ?>
             do_action( 'woocommerce_after_main_content' );
         ?>
 
-        <?php
-            /**
-             * woocommerce_sidebar hook.
-             *
-             * @hooked woocommerce_get_sidebar - 10
-             */
-            do_action( 'woocommerce_sidebar' );
-        ?>
-    </div>
-</main>
 <?php
 get_footer( );
