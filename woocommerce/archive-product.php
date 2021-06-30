@@ -7,6 +7,15 @@ get_header( );
 ?>
 <main id="primary" class="main">
 	<div class="block-general">
+	<?php
+    /**
+     * woocommerce_before_main_content hook
+     *
+     * @hooked woocommerce_output_content_wrapper - 10 (outputs opening divs for the content)
+     * @hooked woocommerce_breadcrumb - 20
+     */
+    do_action( 'woocommerce_before_main_content' );
+?>
 		<div class="block-general-title">
 			<?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
 				<h1 class="woocommerce-products-header__title page-title"><?php woocommerce_page_title(); ?></h1>
