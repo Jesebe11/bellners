@@ -31,7 +31,19 @@
 .comment-form{
     @apply bg-bell-gray-2 text-bell-gray-3 p-2;
 	.comment-form-comment{
-		@apply flex flex-col-reverse;
+		@apply flex flex-col border-b-2 border-bell-gray-3 pb-2;
+	}
+	.comment-form-author{
+		@apply flex flex-col gap-2;
+	}
+	.comment-form-author > input{
+		@apply w-1/2 bg-transparent border border-bell-gray-3 text-bell-gray-3 p-2 rounded-sm;
+	}
+	.comment-form-email{
+		@apply flex flex-col gap-2;
+	}
+	.comment-form-email > input{
+		@apply w-1/2 bg-transparent border border-bell-gray-3 text-bell-gray-3 p-2 rounded-sm;
 	}
 	.comment-form-comment > textarea{
 		@apply w-2/3 bg-transparent border p-4;
