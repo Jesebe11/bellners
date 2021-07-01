@@ -1,5 +1,5 @@
 .woocommerce-breadcrumb{
-    @apply w-full flex text-lg font-thin mx-0 my-4 italic bg-bell-gray-3 justify-center;
+    @apply w-full flex flex-wrap text-lg font-thin mx-0 my-4 italic bg-bell-gray-3 justify-center;
 }
 .woocommerce-breadcrumb > a{
     @apply not-italic text-bell-purple-dark font-bold;

@@ -36,7 +36,7 @@
 	.summary{
 		@apply w-2/4 px-4;
 		.cart{
-			@apply flex gap-4 items-center;
+			@apply gap-4;
 		}
 		.woocommerce-product-details__short-description > p{
 					display: -webkit-box;
