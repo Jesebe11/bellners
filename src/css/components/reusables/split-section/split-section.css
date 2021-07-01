@@ -10,12 +10,12 @@
 @screen lg{
 
     .split-section{
-        @apply flex flex-row p-4;
+        @apply flex flex-row gap-4;
         &__normal{
             @apply w-2/3;
         }
         &__sidebar{
-            @apply w-1/4;
+            @apply w-1/3;
         }
     }
 }
