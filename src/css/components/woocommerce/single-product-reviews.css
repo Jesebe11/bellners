@@ -1,0 +1,67 @@
+.woocommerce-Reviews{
+    @apply flex flex-col gap-4;
+}
+.commentlist{
+	@apply overflow-scroll flex gap-4 max-w-full;
+}
+
+.review{
+    @apply border border-bell-purple-dark p-2 rounded-md;
+    min-width: 90%;
+}
+
+.comment_container{
+	.comment-text{
+		.meta{
+			.woocommerce-review__published-date{
+				@apply italic ;
+			}
+		}
+		.description{
+			@apply flex justify-end gap-2 italic px-2;
+		}
+		.description::before{
+			content:' ~ ';
+		}
+	}
+}
+.comment_container > img{
+	@apply rounded-full;
+}
+.comment-form{
+    @apply bg-bell-gray-2 text-bell-gray-3 p-2;
+	.comment-form-comment{
+		@apply flex flex-col-reverse;
+	}
+	.comment-form-comment > textarea{
+		@apply w-2/3 bg-transparent border p-4;
+	}
+	.form-submit{
+		.submit{
+			@apply w-24 rounded-md cursor-pointer p-4 transition duration-700 text-bell-gray-2;
+			&:hover{
+				@apply bg-transparent text-bell-gray-3 border border-bell-gray-3 rounded-md;
+			}
+		}
+	}
+}
+.comment-reply-title{
+	@apply text-2xl p-4;
+}
+@screen lg{
+	.commentlist{
+		@apply max-w-none grid grid-cols-2;
+        scrollbar-width: none;
+        overflow: unset;
+		.review{
+			@apply min-w-0;
+            .comment_container{
+                @apply  flex gap-2;
+            }
+            .comment_container > img{
+                width:60px;
+                height:60px;
+            }
+		}
+	}
+}

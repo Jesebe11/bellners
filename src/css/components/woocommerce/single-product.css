@@ -1,8 +1,8 @@
 .product{
-	@apply flex flex-wrap justify-center gap-2 bg-bell-gray-3 my-4 p-4 items-center relative;
+	@apply flex flex-wrap justify-center gap-16 bg-bell-gray-3 my-4 items-center relative;
 }
 .woocommerce-product-gallery{
-	@apply w-1/3 flex flex-col gap-8;
+	@apply flex flex-col gap-8 w-4/5;
 }
 .sale-flash{
 	@apply absolute top-0 left-0;
@@ -21,8 +21,16 @@
 	@apply opacity-100;
 }
 .woocommerce-product-gallery__trigger{
-   display: none;
+	display: none;
 }
 .woocommerce-product-gallery__image{
 	@apply cursor-pointer;
+}
+@screen lg{
+	.product{
+		@apply p-4;
+	}
+	.woocommerce-product-gallery{
+		@apply w-1/3;
+	}
 }

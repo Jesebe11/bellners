@@ -1,21 +1,21 @@
 .summary{
-	@apply border border-bell-purple-dark w-full flex flex-col gap-8 text-xl p-8 border-opacity-25 rounded-sm;
+	@apply border border-bell-purple-dark w-full flex flex-col gap-8 text-xl border-opacity-25 rounded-sm;/**p8*/
 		.product_title{
 			@apply text-bell-purple-dark font-bold text-4xl;
 		}
 		.woocommerce-product-details__short-description > p{
-			@apply italic;
+			@apply italic text-base px-2;
 					display: -webkit-box;
                     -webkit-box-orient: vertical;
-                    -webkit-line-clamp: 2;
-                    line-clamp: 2;
+                    -webkit-line-clamp: 4;
+                    line-clamp: 4;
                     overflow: hidden;
 		}
 		.cart{
-			@apply flex gap-4 items-center;
+			@apply flex flex-col gap-4 px-2;
 			.quantity{
 				.input-text{
-					@apply bg-transparent border-bell-purple-dark border-2 outline-none p-2 text-bell-purple-dark;
+					@apply bg-transparent border-bell-purple-dark border-2 outline-none p-2 text-bell-purple-dark w-1/2;
 				}
 			}
 			.single_add_to_cart_button{
@@ -35,5 +35,15 @@
 @screen lg{
 	.summary{
 		@apply w-2/4 px-4;
+		.cart{
+			@apply flex gap-4 items-center;
+		}
+		.woocommerce-product-details__short-description > p{
+					display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 3;
+                    line-clamp: 3;
+                    overflow: hidden;
+		}
 	}
 }
