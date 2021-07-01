@@ -172,6 +172,12 @@ require get_template_directory() . '/inc/our-functions.php';
 require get_template_directory() . '/template-parts/widgets.php';
 
 /**
+ * Pagination
+ */
+
+require get_template_directory() . '/inc/pagination.php';
+
+/**
  * Load Jetpack compatibility file.
  */
 if ( defined( 'JETPACK__VERSION' ) ) {

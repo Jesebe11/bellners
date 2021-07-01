@@ -32,6 +32,7 @@ get_header();
 					?>
 				</aside>
 			</section>
+			<?php bellner_numeric_posts_nav(); ?>
 		</div>
 	</main>
 <?php

@@ -30,3 +30,18 @@ if( ! function_exists( 'WC_SCRIPT_in_wp_footer' ) && function_exists( 'is_produc
     }
 }
 add_action( 'wp_footer', 'WC_SCRIPT_in_wp_footer' );
+
+/**
+ * Traer cierta cantidad especifica de post para las archive
+*/
+
+function bellner_change_posts_per_page( $query ) {
+    if ( is_admin() || ! $query->is_main_query() ) {
+    return;
+    }
+
+    if ( is_archive(  ) ) {
+    $query->set( 'posts_per_page', 2 );
+    }
+}
+add_filter( 'pre_get_posts', 'bellner_change_posts_per_page' );
