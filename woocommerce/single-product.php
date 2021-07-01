@@ -2,6 +2,8 @@
 
 get_header( ); ?>
 
+    <main id="primary" class="main">
+        <div class="block-general">
 <?php
     /**
      * woocommerce_before_main_content hook
@@ -11,8 +13,6 @@ get_header( ); ?>
      */
     do_action( 'woocommerce_before_main_content' );
     ?>
-    <main id="primary" class="main">
-        <div class="block-general">
 		<?php while ( have_posts() ) : ?>
 			<?php the_post(); ?>
 
