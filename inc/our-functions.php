@@ -41,7 +41,7 @@ function bellner_change_posts_per_page( $query ) {
     }
 
     if ( is_archive(  ) ) {
-    $query->set( 'posts_per_page', 2 );
+    $query->set( 'posts_per_page', 6 );
     }
 }
 add_filter( 'pre_get_posts', 'bellner_change_posts_per_page' );

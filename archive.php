@@ -24,6 +24,8 @@ get_header();
 									endwhile;
 									endif;
 								?>
+								<div class="pagination"><?php pagination('»', '«'); ?></div>
+
 						</div>
 					</div>
 				<aside class="split-section__sidebar">
@@ -32,7 +34,7 @@ get_header();
 					?>
 				</aside>
 			</section>
-			<?php bellner_numeric_posts_nav(); ?>
+
 		</div>
 	</main>
 <?php
