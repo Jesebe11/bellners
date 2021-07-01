@@ -1,0 +1,35 @@
+.wc-tabs-wrapper{
+	@apply w-full px-4;
+}
+.woocommerce-tabs ul.tabs {
+	@apply flex gap-1 list-none m-0 p-0 text-left flex-col;
+}
+
+.woocommerce-tabs ul.tabs li {
+	@apply block relative m-0 text-bell-gray-3 bg-bell-purple-dark px-2 text-lg font-semibold;
+	border-radius: 8px 8px 0 0;
+}
+.woocommerce-tabs ul.tabs li.active{
+	@apply bg-bell-gray-3 text-bell-purple-dark border-bell-purple-dark border-t-2 border-r-2 border-l-2;
+}
+.woocommerce-tabs ul.tabs li a {
+	padding: 1em 0;
+	@apply block;
+}
+.woocommerce-Tabs-panel{
+	@apply px-4 text-bell-purple-dark text-justify text-lg p-6 border-bell-purple-dark border-b shadow-2xl;
+	-webkit-box-shadow: 5px -10px 10px 4px rgba(54,1,71,0.55);
+	box-shadow: 5px -10px 10px 4px rgba(54,1,71,0.55);
+}
+.woocommerce-tabs .panel p{
+	@apply px-8 italic;
+}
+.woocommerce-tabs .panel h2:first-of-type {
+	@apply py-4 text-bell-purple-dark text-2xl font-bold;
+}
+
+@screen lg{
+	.woocommerce-tabs ul.tabs {
+		@apply flex-row;
+	}
+}

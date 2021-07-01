@@ -1,0 +1,39 @@
+.summary{
+	@apply border border-bell-purple-dark w-full flex flex-col gap-8 text-xl p-8 border-opacity-25 rounded-sm;
+		.product_title{
+			@apply text-bell-purple-dark font-bold text-4xl;
+		}
+		.woocommerce-product-details__short-description > p{
+			@apply italic;
+					display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 2;
+                    line-clamp: 2;
+                    overflow: hidden;
+		}
+		.cart{
+			@apply flex gap-4 items-center;
+			.quantity{
+				.input-text{
+					@apply bg-transparent border-bell-purple-dark border-2 outline-none p-2 text-bell-purple-dark;
+				}
+			}
+			.single_add_to_cart_button{
+				@apply bg-bell-purple-dark text-bell-gray-3 transition duration-300 px-4 py-2 rounded-md;
+					&:hover{
+						@apply bg-bell-gray-3 text-bell-purple-dark border-bell-purple-dark border;
+					}
+			}
+		}
+		.product_meta{
+			.posted_in > a{
+				@apply underline italic text-bell-purple-dark;
+			}
+		}
+}
+
+@screen lg{
+	.summary{
+		@apply w-2/4 px-4;
+	}
+}

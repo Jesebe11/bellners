@@ -1,3 +1,6 @@
 @import './components/woocommerce/wocommerce.css';
 @import './components/woocommerce/ul-products-shop.css';
 @import './components/woocommerce/single-product.css';
+@import './components/woocommerce/single-product-tabs.css';
+@import './components/woocommerce/single-product-summary.css';
+@import './components/woocommerce/single-product-reviews.css';
