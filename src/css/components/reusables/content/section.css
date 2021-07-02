@@ -18,7 +18,7 @@
                 &__list{
                     @apply flex flex-wrap text-bell-purple-dark italic;
                         &__item{
-                            @apply flex gap-2 p-2;
+                            @apply flex gap-2 p-2 text-sm;
                             &:hover{
                             @apply text-bell-gray border-b-2 border-bell-purple-dark;
                             }
@@ -63,11 +63,10 @@
             overflow: unset;
                 .item-blog{
                     @apply min-w-0;
-                    &__title{
-                        @apply text-xl;
-                    }
                         &__list{
-                            @apply inline-flex gap-2;
+                            &__item{
+                                @apply flex-none;
+                            }
                     }
                     &__excerpt{
                         @apply p-2 text-lg;

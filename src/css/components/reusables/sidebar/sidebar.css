@@ -1,5 +1,5 @@
 .split-section__sidebar{
-    @apply bg-bell-gray-1;
+    @apply bg-bell-gray-2;
         &__content{
             @apply ;
         }
