@@ -1,0 +1,23 @@
+.navigation li a,
+.navigation li a:hover,
+.navigation li.active a,
+.navigation li.disabled {
+    @apply text-bell-gray-3 no-underline;
+}
+
+.navigation li {
+    @apply inline;
+}
+
+.navigation li a,
+.navigation li a:hover,
+.navigation li.active a,
+.navigation li.disabled {
+    @apply bg-bell-gray-1 text-bell-purple-dark;
+    @apply cursor-pointer p-3 rounded-md;
+}
+
+.navigation li a:hover,
+.navigation li.active a {
+    @apply bg-bell-purple-dark text-bell-gray-3;
+}
