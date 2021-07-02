@@ -1,14 +1,13 @@
 .split-section{
     @apply flex flex-col justify-between p-0;
         &__normal{
-            @apply w-full;
+            @apply w-full flex flex-col items-center gap-8;
         }
         &__sidebar{
             @apply w-full;
         }
 }
 @screen lg{
-
     .split-section{
         @apply flex flex-row gap-4;
         &__normal{
