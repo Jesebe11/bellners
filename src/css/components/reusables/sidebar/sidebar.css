@@ -1,6 +1,6 @@
 .split-section__sidebar{
-    @apply bg-bell-gray-2;
+    @apply shadow-2xl flex flex-col border-bell-gray-2 border border-opacity-50;
         &__content{
-            @apply ;
+            @apply flex flex-col gap-2 p-4 bg-bell-gray-3 bg-opacity-50 items-center;
         }
 }
