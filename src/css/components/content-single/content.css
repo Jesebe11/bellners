@@ -1,8 +1,8 @@
 .single{
     &__content{
-        @apply text-justify px-2 text-base flex flex-col gap-4;
+        @apply text-justify px-2 text-base flex flex-col gap-4 items-center;
         blockquote{
-            @apply px-4 w-2/3 border-bell-purple-dark border rounded-sm shadow-2xl;
+            @apply px-4 w-full border-bell-purple-dark border rounded-sm shadow-2xl;
             &:before{
                 content: url(https://i.postimg.cc/LsKs8X24/quote.png);
             }
@@ -33,6 +33,16 @@
                             }
                     }
                 }
+        }
+    }
+}
+@screen lg{
+    .single{
+        &__content{
+            @apply text-justify px-2 text-base flex flex-col gap-4;
+            blockquote{
+                @apply w-3/4;
+            }
         }
     }
 }

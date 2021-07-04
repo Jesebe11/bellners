@@ -1,4 +1,4 @@
-<div class="block-general-title">
+<div class="block-general-title block-general-title--single">
         <?php if( is_home() ) :  ?>
         <?= $args['title']; ?>
                 <a href="#"><img src="https://i.postimg.cc/7hBtnNXT/fast-forward-double-right-arrows-symbol.png" alt="Ir"></a>

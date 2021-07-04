@@ -50,7 +50,7 @@
 	}
 	.form-submit{
 		.submit{
-			@apply w-24 rounded-md cursor-pointer p-4 transition duration-700 text-bell-gray-2;
+			@apply w-32 my-4 rounded-md cursor-pointer p-4 transition duration-700 text-bell-gray-2;
 			&:hover{
 				@apply bg-transparent text-bell-gray-3 border border-bell-gray-3 rounded-md;
 			}

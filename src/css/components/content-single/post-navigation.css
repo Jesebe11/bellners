@@ -1,0 +1,29 @@
+.post-navigation{
+    @apply text-bell-purple-dark p-0 text-base italic;
+        .nav-links{
+            @apply flex flex-col justify-between gap-4;
+                .nav-previous , .nav-next{
+                    @apply w-full flex border border-bell-purple-dark shadow-2xl rounded-md transition duration-300;
+                        &:hover{
+                            @apply underline shadow-none bg-bell-purple-dark text-bell-gray-3;
+                        }
+                }
+                .nav-previous a , .nav-next a{
+                    @apply flex items-center flex-row-reverse p-2;
+                        span{
+                            @apply px-2;
+                        }
+                }
+        }
+}
+@screen lg{
+    .post-navigation{
+        @apply p-4;
+        .nav-links{
+            @apply flex flex-row;
+            .nav-previous , .nav-next{
+                @apply w-1/2;
+            }
+        }
+    }
+}

@@ -27,6 +27,9 @@
             }
             .block-general-title{
                 @apply text-5xl font-extrabold text-bell-purple-dark border-bell-purple-dark border-b-2 border-opacity-50 my-8 flex justify-between px-2 items-center;
+                &--single{
+                    @apply text-lg;
+                }
             }
             .block-general-title > a{
                 @apply transform translate-x-1 transition duration-300;
@@ -44,6 +47,11 @@ html{
         .main{
             .block-general{
                 @apply w-4/5 gap-8;
+            }
+            .block-general-title{
+                &--single{
+                    @apply text-5xl;
+                }
             }
         }
     }
