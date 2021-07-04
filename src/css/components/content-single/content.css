@@ -1,20 +1,38 @@
 .single{
     &__content{
-        @apply text-justify px-2 text-lg flex flex-col gap-4;
-    }
-    &__content blockquote{
-        @apply px-4 w-2/3 border-bell-purple-dark border rounded-sm shadow-2xl;
-        &:before{
-            content: url(https://i.postimg.cc/LsKs8X24/quote.png);
+        @apply text-justify px-2 text-base flex flex-col gap-4;
+        blockquote{
+            @apply px-4 w-2/3 border-bell-purple-dark border rounded-sm shadow-2xl;
+            &:before{
+                content: url(https://i.postimg.cc/LsKs8X24/quote.png);
+            }
+            cite{
+                @apply text-sm italic text-opacity-50 flex flex-col items-end;
+                &:before , &:after{
+                    content: '\007E';
+                }
+            }
         }
-    }
-    &__content blockquote p{
-        @apply text-xl font-bold px-4;
-    }
-    &__content cite{
-        @apply text-base italic text-opacity-50 flex flex-col items-end;
-        &:before , &:after{
-            content: '\007E';
+        blockquote p{
+            @apply text-lg font-bold px-4;
+        }
+        ol{
+            @apply px-4 text-sm italic font-bold list-decimal;
+        }
+        ul{
+            @apply list-disc px-4 font-bold;
+        }
+        .wp-block-gallery{
+            @apply flex flex-col gap-2 items-center justify-center bg-bell-purple-dark text-bell-gray-3 py-4 italic;
+                .blocks-gallery-grid{
+                    .blocks-gallery-item{
+                        filter: brightness(0.7);
+                            &:hover{
+                                filter: initial;
+                                cursor: pointer;
+                            }
+                    }
+                }
         }
     }
 }
