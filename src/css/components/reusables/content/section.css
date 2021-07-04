@@ -2,6 +2,9 @@
     &__normal{
         &__blogs{
         @apply flex gap-4 min-w-full overflow-scroll;
+            &--single{
+                @apply flex flex-col gap-4;
+            }
             .item-blog{
                 @apply flex flex-col gap-2 border-b-2 border-bell-purple-dark shadow-2xl;
                 min-width: 90%;
@@ -61,6 +64,9 @@
             @apply grid grid-cols-2 min-w-0;
             scrollbar-width: none;
             overflow: unset;
+            &--single{
+                @apply flex flex-col gap-4;
+            }
                 .item-blog{
                     @apply min-w-0;
                         &__list{

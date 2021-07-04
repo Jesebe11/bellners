@@ -10,31 +10,32 @@
 get_header();
 ?>
 
-	<main id="primary" class="site-main">
 
-		<?php
-		while ( have_posts() ) :
-			the_post();
+	<main id="primary" class="main">
+		<div class="block-general">
+			<?php get_template_part( 'template-parts/components/reusables/titles/titles'); ?>
+				<section class="split-section">
+					<div class="split-section__normal split-section__normal--single">
+						<div class="split-section__normal__blogs split-section__normal__blogs--single">
+							<?php
+								while ( have_posts() ) :
+									the_post();
+									get_template_part( 'template-parts/content-single' );
+								endwhile;
+							?>
+						</div>
 
-			get_template_part( 'template-parts/content', get_post_type() );
+					</div>
+					<aside class="split-section__sidebar">
+						<?php
+							get_template_part( 'template-parts/components/reusables/content/sidebar');
+						?>
+					</aside>
+				</section>
 
-			the_post_navigation(
-				array(
-					'prev_text' => '<span class="nav-subtitle">' . esc_html__( 'Previous:', 'bellners' ) . '</span> <span class="nav-title">%title</span>',
-					'next_text' => '<span class="nav-subtitle">' . esc_html__( 'Next:', 'bellners' ) . '</span> <span class="nav-title">%title</span>',
-				)
-			);
-
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
-
-		endwhile; // End of the loop.
-		?>
-
-	</main><!-- #main -->
+		</div>
+	</main>
 
 <?php
-get_sidebar();
+
 get_footer();
