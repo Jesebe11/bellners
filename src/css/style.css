@@ -2,9 +2,10 @@
 
 /**/@import 'tailwindcss/components';
 
+@import './content-home.css';
 @import './content-header.css';
 @import './content-footer.css';
-@import './content-home.css';
+@import './content-single.css';
 @import './content-contact.css';
 @import './content-about.css';
 @import './content-reusables.css';
