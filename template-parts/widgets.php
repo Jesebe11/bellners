@@ -4,3 +4,4 @@ require get_template_directory() . '/template-parts/components/widgets/details-t
 require get_template_directory() . '/template-parts/components/widgets/social.php';
 require get_template_directory() . '/template-parts/components/widgets/recent.php';
 require get_template_directory() . '/template-parts/components/widgets/logo.php';
+require get_template_directory() . '/template-parts/components/widgets/search.php';
