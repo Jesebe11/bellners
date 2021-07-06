@@ -5,6 +5,14 @@
 	@apply relative overflow-hidden w-full transition duration-500;
         .content-title{
             @apply text-2xl font-bold text-bell-purple-dark px-2;
+			&--recent{
+				@apply text-lg font-normal text-bell-gray-2;
+				display: -webkit-box;
+				-webkit-box-orient: vertical;
+				-webkit-line-clamp: 2;
+				line-clamp: 2;
+				overflow: hidden;
+			}
         }
         .tags{
             @apply text-xs italic px-4 py-2 text-bell-purple-dark text-opacity-50;
@@ -52,7 +60,7 @@
 .content-text{
     @apply text-bell-gray-3 flex flex-col items-center;
 	.excerpt{
-        @apply justify-center;
+        @apply justify-center w-full;
 		display: -webkit-box;
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 3;

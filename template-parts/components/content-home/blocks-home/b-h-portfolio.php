@@ -6,7 +6,7 @@ $args = [
     'orderby' => 'date',
     'order' => 'DESC',
     'posts_per_page' => 6,
-    'category_name' => 'proyectos'
+    'category_name' => 'portafolio'
 ];
 
 $the_query = new WP_Query( $args);
