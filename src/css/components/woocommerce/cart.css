@@ -1,0 +1,56 @@
+.the-content{
+    .woocommerce{
+        @apply flex flex-col gap-2;
+            .woocommerce-cart-form{
+                @apply border border-bell-gray-2;
+                    &__contents{
+                        @apply w-full text-center border-separate;
+                        border-spacing: 5px 5px;
+                            thead{
+                                @apply bg-bell-gray-2 text-bell-gray-3 font-bold;
+                            }
+                            tbody , tr , td{
+                                @apply border border-bell-gray-2 border-opacity-25;
+                                    .quantity{
+                                        .input-text{
+                                            @apply w-1/2 border border-bell-gray-2 p-1 rounded-md bg-transparent;
+                                        }
+                                    }
+                                    .actions{
+                                        @apply py-4 bg-bell-purple-dark text-bell-gray-3;
+                                            .coupon{
+                                                .input-text{
+                                                    @apply w-1/4 bg-transparent border border-bell-gray-3 p-2 outline-none text-bell-gray-3;
+                                                }
+                                                .button{
+                                                    @apply p-2 rounded-md bg-bell-gray-3 text-bell-gray transition duration-300;
+                                                        &:hover{
+                                                            @apply bg-transparent border border-bell-gray-3 text-bell-gray-3;
+                                                        }
+                                                }
+                                            }
+                                    }
+                                    tr, td{
+                                        @apply bg-bell-gray-3;
+                                    }
+                            }
+                    }
+            }
+            .cart-collaterals{
+                @apply  bg-bell-gray-1;
+            }
+    }
+}
+@screen lg{
+    .the-content{
+        .woocommerce{
+            @apply flex-row gap-4;
+            .woocommerce-cart-form{
+                @apply w-9/12;
+            }
+            .cart-collaterals{
+                @apply w-1/4;
+            }
+        }
+    }
+}
