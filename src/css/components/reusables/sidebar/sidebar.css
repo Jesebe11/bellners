@@ -4,3 +4,16 @@
             @apply flex flex-col bg-opacity-50 items-center gap-8 py-4;
         }
 }
+.split-section-down{
+    @apply flex flex-col gap-4 mt-8 items-center;
+    svg{
+        @apply bg-bell-gray-2;
+        width: 80rem;
+    }
+    &__sidebar{
+        @apply flex flex-wrap gap-4 justify-center;
+            .widget{
+                width: 30%;
+            }
+    }
+}

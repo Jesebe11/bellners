@@ -1,4 +1,5 @@
 .widget_product_categories, .widget_categories,  .widget_products , .widget_recent_entries, .widget_recent_reviews, .widget_top_rated_products, .widget_shopping_cart, .widget_media_gallery{
+    width: 40rem;
     @apply w-11/12 bg-bell-gray-3 border-b-2 border-t-2 py-4 border-bell-gray-2 border-opacity-75 shadow-2xl rounded-sm flex flex-col items-center gap-2;
         .widget-title{
             @apply text-2xl flex text-bell-gray-2 underline;
