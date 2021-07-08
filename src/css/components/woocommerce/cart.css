@@ -2,54 +2,95 @@
     .woocommerce{
         @apply flex flex-col gap-2;
             .woocommerce-cart-form{
-                @apply border border-bell-gray-2;
+                @apply w-full flex flex-col;
                     &__contents{
-                        @apply w-full text-center border-separate;
-                        border-spacing: 5px 5px;
-                            thead{
-                                @apply bg-bell-gray-2 text-bell-gray-3 font-bold;
-                            }
-                            tbody , tr , td{
-                                @apply border border-bell-gray-2 border-opacity-25;
-                                    .quantity{
+                        @apply w-full text-center shadow-2xl mb-8;
+                        tbody{
+                            @apply max-w-full flex flex-col gap-4;
+                            tr , td{
+                                @apply shadow-sm flex flex-col items-center;
+                                .quantity{
                                         .input-text{
                                             @apply w-1/2 border border-bell-gray-2 p-1 rounded-md bg-transparent;
                                         }
                                     }
-                                    .actions{
-                                        @apply py-4 bg-bell-purple-dark text-bell-gray-3;
-                                            .coupon{
-                                                .input-text{
-                                                    @apply w-1/4 bg-transparent border border-bell-gray-3 p-2 outline-none text-bell-gray-3;
-                                                }
-                                                .button{
-                                                    @apply p-2 rounded-md bg-bell-gray-3 text-bell-gray transition duration-300;
-                                                        &:hover{
-                                                            @apply bg-transparent border border-bell-gray-3 text-bell-gray-3;
-                                                        }
-                                                }
-                                            }
-                                    }
-                                    tr, td{
-                                        @apply bg-bell-gray-3;
-                                    }
+                                }
+                                tr{
+                                    @apply border-b-8 border border-bell-gray-2 rounded-sm bg-bell-gray-1 bg-opacity-25 py-2;
+                                }
+                        }
+                    }
+                    .refresh{
+                        @apply outline-none text-4xl font-bold text-bell-purple-dark transition duration-300 animate-bounce;
+                            &:disabled{
+                                @apply opacity-25 animate-none;
                             }
                     }
             }
             .cart-collaterals{
-                @apply  bg-bell-gray-1;
+                @apply text-bell-gray-2 w-full flex flex-col gap-4;
+
+                    .cart_totals {
+                        @apply border bg-bell-gray-2 rounded-md shadow-2xl text-bell-gray-3 w-full flex flex-col p-4 items-end;/** w-1/2 */
+                        table{
+                            @apply w-full;
+                                tbody{
+                                    @apply flex flex-col gap-4;
+                                        tr{
+                                            @apply flex gap-8;
+                                        }
+                                }
+                        }
+                        .wc-proceed-to-checkout{
+                            @apply bg-bell-gray-3 text-bell-gray-2 p-4 rounded-md transition duration-300;
+                                &:hover{
+                                    @apply bg-transparent border-bell-gray-3 border text-bell-gray-3;
+                                }
+                        }
+                    }
+                    .actions{
+                        @apply p-4 text-bell-gray-2 text-left w-full;/** w-1/2 */
+                        .coupon{
+                            @apply border-4 border-bell-gray-2 p-4 w-full flex flex-col gap-2; /** flex-row*/
+                            &:before{
+                                content: url(https://i.postimg.cc/13LdKZyN/scissors-inverted-view.png);
+                                @apply transform rotate-45 absolute;
+                            }
+                                border: dashed 5px;
+                                .input-text{
+                                    @apply bg-transparent border border-bell-gray-2 p-2 outline-none text-bell-gray-2;
+                                }
+                                .button{
+                                    @apply p-2 rounded-md bg-bell-gray-2 text-bell-gray-3 transition duration-300;
+                                        &:hover{
+                                            @apply bg-transparent border border-bell-gray-2 text-bell-gray-2;
+                                        }
+                                }
+                            }
+                    }
             }
     }
 }
+
 @screen lg{
     .the-content{
         .woocommerce{
-            @apply flex-row gap-4;
+            @apply flex-col gap-4;
             .woocommerce-cart-form{
-                @apply w-9/12;
+                &__contents{
+                    @apply w-full text-center shadow-2xl mb-8;
+                    tbody{
+                        @apply max-w-none flex flex-col border-2 border-bell-gray-2 rounded-md border-opacity-25 p-2;
+                        scrollbar-width: none;
+                        overflow: unset;
+                        tr , td{
+                            @apply shadow-sm border-none min-w-0 flex flex-row w-full text-xl justify-center items-center;
+                        }
+                    }
+                }
             }
             .cart-collaterals{
-                @apply w-1/4;
+                @apply w-full flex-row;
             }
         }
     }
