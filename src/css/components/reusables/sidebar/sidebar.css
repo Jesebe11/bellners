@@ -7,13 +7,26 @@
 .split-section-down{
     @apply flex flex-col gap-4 mt-8 items-center;
     svg{
-        @apply bg-bell-gray-2;
-        width: 80rem;
+        @apply bg-bell-gray-2 text-xs;
     }
     &__sidebar{
-        @apply flex flex-wrap gap-4 justify-center;
+        @apply flex flex-col flex-wrap gap-4 justify-center;
             .widget{
-                width: 30%;
+                width: 100%;
             }
+    }
+}
+@screen lg{
+    .split-section-down{
+        svg{
+            @apply text-lg;
+            width: 80rem;
+        }
+        &__sidebar{
+            @apply flex-row;
+                .widget{
+                    width: 30%;
+                }
+        }
     }
 }
