@@ -99,3 +99,13 @@ function ts_quantity_plus_minus() {
 </script>
 <?php
 }
+// Remover tab my account address
+add_filter( 'woocommerce_account_menu_items', 'bellner_remove_address_my_account', 999 );
+
+function bellner_remove_address_my_account( $items ) {
+
+unset($items['edit-address']);
+
+return $items;
+
+}
