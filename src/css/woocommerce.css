@@ -12,4 +12,5 @@
 /**Cart page*/
 @import './components/woocommerce/cart/cart.css';
 /**Account-page*/
-@import './components/woocommerce/account/account.css';
+@import './components/woocommerce/account/account-content.css';
+@import './components/woocommerce/account/navigation.css';

@@ -1,0 +1,15 @@
+.woocommerce-MyAccount-navigation{
+    @apply text-bell-purple-dark w-full flex justify-center p-4;
+        ul{
+            @apply inline-flex gap-4;
+                li{
+                    @apply p-2 font-bold border-r-2 border-t-2 border-l-2 rounded-sm border-bell-gray-2 opacity-50 transform transition duration-300;
+                        &:hover{
+                            @apply opacity-100 translate-x-2;
+                        }
+                }
+                li.is-active{
+                    @apply border-none opacity-100;
+                }
+        }
+}
