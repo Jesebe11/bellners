@@ -1,15 +1,46 @@
 .woocommerce-MyAccount-navigation{
-    @apply bg-bell-purple-dark text-bell-gray-3 w-full flex justify-center p-4;
+    @apply text-bell-purple-dark w-full flex justify-center p-4;
         ul{
             @apply inline-flex gap-4;
                 li{
-                    @apply p-2 font-bold border-b-2 border-bell-gray-3 opacity-75 transition duration-300;
+                    @apply p-2 font-bold border-r-2 border-t-2 border-l-2 rounded-sm border-bell-gray-2 opacity-50 transform transition duration-300;
                         &:hover{
-                            @apply border-none opacity-100;
+                            @apply opacity-100 translate-x-2;
                         }
                 }
                 li.is-active{
-                    @apply border-none;
+                    @apply border-none opacity-100;
                 }
+        }
+}
+.woocommerce-MyAccount-content{
+    @apply bg-bell-gray-3 flex justify-center p-4;
+        table{
+            @apply border-separate text-center;
+            border-spacing: 2em;
+            thead{
+                    tr{
+                        th{
+                            @apply p-4 underline;
+                        }
+                    }
+            }
+            tbody{
+                tr{
+                    .woocommerce-orders-table__cell-order-actions{
+                        a{
+                            @apply text-transparent py-2 bg-no-repeat transition duration-300;
+                            background-image: url(https://i.postimg.cc/XYxYWZTQ/search.png);
+                        }
+                    }
+                    .download-file{
+                        @apply underline flex items-center gap-2;
+                        &:after{
+                            content: url('https://i.postimg.cc/66fZqh4h/button.png');
+                        }
+                    }
+                }
+            }
+
         }
 }
