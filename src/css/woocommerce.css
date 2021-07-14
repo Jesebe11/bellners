@@ -1,10 +1,15 @@
-@import './components/woocommerce/ul-products-shop.css';
-@import './components/woocommerce/single-product.css';
-@import './components/woocommerce/single-product-tabs.css';
-@import './components/woocommerce/single-product-summary.css';
-@import './components/woocommerce/single-product-reviews.css';
-@import './components/woocommerce/star-rating.css';
-@import './components/woocommerce/breadcrumbs.css';
-@import './components/woocommerce/notices-wrapper.css';
-@import './components/woocommerce/cart.css';
-@import './components/woocommerce/account.css';
+/** Shop page*/
+@import './components/woocommerce/shop/ul-products-shop.css';
+/** Single product*/
+@import './components/woocommerce/single-product/single-product.css';
+@import './components/woocommerce/single-product/single-product-tabs.css';
+@import './components/woocommerce/single-product/single-product-summary.css';
+@import './components/woocommerce/single-product/single-product-reviews.css';
+/**Generals or reusables*/
+@import './components/woocommerce/generals/star-rating.css';
+@import './components/woocommerce/generals/breadcrumbs.css';
+@import './components/woocommerce/generals/notices-wrapper.css';
+/**Cart page*/
+@import './components/woocommerce/cart/cart.css';
+/**Account-page*/
+@import './components/woocommerce/account/account.css';
