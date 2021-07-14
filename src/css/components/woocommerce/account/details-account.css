@@ -1,5 +1,5 @@
 .woocommerce-MyAccount-content{
-    .woocommerce-EditAccountForm{
+    .woocommerce-EditAccountForm, .woocommerce-address-fields__field-wrapper, .woocommerce-form-login{
         @apply text-bell-gray-2 flex flex-col gap-4 p-4;
             p{
                 @apply flex flex-col;

@@ -1,0 +1,15 @@
+.woocommerce-MyAccount-content{
+    h3{
+        @apply text-2xl font-bold;
+    }
+    .woocommerce-address-fields{
+        p{
+            .button{
+                @apply w-2/3 rounded-md p-4 bg-bell-purple-dark text-bell-gray-3 transition duration-300;
+                    &:hover{
+                        @apply bg-transparent border-bell-purple-dark border text-bell-purple-dark;
+                    }
+            }
+        }
+    }
+}

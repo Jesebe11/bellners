@@ -15,3 +15,5 @@
 @import './components/woocommerce/account/account-content.css';
 @import './components/woocommerce/account/navigation.css';
 @import './components/woocommerce/account/details-account.css';
+@import './components/woocommerce/account/edit-address.css';
+@import './components/woocommerce/account/dashboard.css';

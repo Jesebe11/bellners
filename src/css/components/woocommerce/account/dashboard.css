@@ -1,0 +1,10 @@
+.woocommerce-MyAccount-content{
+    p{
+        a{
+            @apply text-bell-purple-dark italic underline;
+                &:hover{
+                    @apply no-underline;
+                }
+        }
+    }
+}
