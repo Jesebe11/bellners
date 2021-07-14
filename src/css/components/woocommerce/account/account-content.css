@@ -1,9 +1,10 @@
 .woocommerce-MyAccount-content{
-    @apply bg-bell-gray-3 flex justify-center p-4;
+    @apply bg-bell-gray-3 flex flex-col justify-center items-center p-4 overflow-auto gap-4;
         table{
             @apply border-separate text-center;
             border-spacing: 2em;
             thead{
+                @apply bg-bell-gray-1;
                     tr{
                         th{
                             @apply p-4 underline;
@@ -19,7 +20,7 @@
                         }
                     }
                     .download-file{
-                        @apply underline flex items-center gap-2;
+                        @apply underline flex items-center gap-2 overflow-auto;
                         &:after{
                             content: url('https://i.postimg.cc/66fZqh4h/button.png');
                         }
@@ -27,5 +28,8 @@
                 }
             }
 
+        }
+        p{
+            
         }
 }

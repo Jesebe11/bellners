@@ -1,0 +1,26 @@
+.woocommerce-MyAccount-content{
+    .woocommerce-EditAccountForm{
+        @apply text-bell-gray-2 flex flex-col gap-4 p-4;
+            p{
+                @apply flex flex-col;
+                    label{
+                        @apply font-bold italic;
+                    }
+                    input{
+                        @apply bg-bell-gray-2 rounded-md p-4 text-bell-white;
+                    }
+                .woocommerce-Button{
+                    @apply w-1/2 rounded-md p-4 bg-bell-purple-dark text-bell-gray-3 transition duration-300;
+                        &:hover{
+                            @apply bg-transparent border-bell-purple-dark border text-bell-purple-dark;
+                        }
+                }
+            }
+            fieldset{
+                @apply border border-bell-purple-dark shadow-2xl p-4;
+                    legend{
+                        @apply text-2xl font-bold;
+                    }
+            }
+    }
+}
