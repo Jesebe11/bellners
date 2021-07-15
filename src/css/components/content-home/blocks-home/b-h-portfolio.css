@@ -1,8 +1,8 @@
-.block-general__portfolio{
+.block-general__products{
 		@apply flex flex-wrap gap-8 justify-center;
 }
 .content {
-	@apply relative overflow-hidden w-full transition duration-500;
+	@apply relative overflow-hidden w-full transition duration-500 flex items-center;
         .content-title{
             @apply text-2xl font-bold text-bell-purple-dark px-2;
 			&--recent{
@@ -36,7 +36,7 @@
 	}
 
 	.content-image{
-		@apply bg-cover w-full;
+		
 	}
 
 	.content-details {
