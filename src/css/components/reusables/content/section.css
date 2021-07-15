@@ -1,7 +1,7 @@
 .split-section{
     &__normal{
         &__blogs{
-        @apply flex gap-4 min-w-full overflow-scroll;
+        @apply flex gap-4 flex-col;
             &--single{
                 @apply flex flex-col gap-4;
             }
