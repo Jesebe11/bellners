@@ -19,7 +19,7 @@ $the_query = new WP_Query( $args);
             ?>
                 <div class="content">
                     <div class="content-overlay"></div>
-                    <?= get_the_post_thumbnail( $post->ID, 'large', array('class' => 'content-image') ); ?>
+                    <?= get_the_post_thumbnail( $post->ID, 'medium', array('class' => 'content-image') ); ?>
                         <div class="content__info">
                             <h2 class="content-title"><?= $title; ?></h2>
                             <?php

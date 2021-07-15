@@ -26,8 +26,12 @@
 			}
 		}
 		.product_meta{
-			.posted_in > a{
+			@apply flex flex-col gap-2;
+			.posted_in > a , .tagged_as > a{
 				@apply underline italic text-bell-purple-dark;
+					&:hover{
+						@apply text-bell-gray-1 no-underline;
+					}
 			}
 		}
 }
@@ -36,7 +40,12 @@
 	.summary{
 		@apply w-2/4 px-4;
 		.cart{
-			@apply gap-4;
+			@apply gap-4 flex-row justify-center items-center;
+			.quantity{
+				.input-text{
+					@apply w-full;
+				}
+			}
 		}
 		.woocommerce-product-details__short-description > p{
 					display: -webkit-box;
