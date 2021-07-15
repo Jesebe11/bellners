@@ -3,20 +3,26 @@
 }
 .content {
 	@apply relative overflow-hidden w-full transition duration-500 flex items-center;
-        .content-title{
-            @apply text-2xl font-bold text-bell-purple-dark px-2;
-			&--recent{
-				@apply text-lg font-normal text-bell-gray-2;
-				display: -webkit-box;
-				-webkit-box-orient: vertical;
-				-webkit-line-clamp: 2;
-				line-clamp: 2;
-				overflow: hidden;
+        &__info{
+			@apply w-full h-full flex flex-col justify-center items-center p-2;
+			.content-title{
+				@apply text-2xl italic text-bell-purple-dark;
+				&--recent{
+					@apply text-lg font-normal text-bell-gray-2;
+					display: -webkit-box;
+					-webkit-box-orient: vertical;
+					-webkit-line-clamp: 2;
+					line-clamp: 2;
+					overflow: hidden;
+				}
 			}
-        }
-        .tags{
-            @apply text-xs italic px-4 py-2 text-bell-purple-dark text-opacity-50;
-        }
+			.tags{
+				@apply text-sm italic px-4 py-2 text-bell-purple-dark text-opacity-50;
+					&:before{
+						content: " ~ ";
+					}
+			}
+		}
         box-shadow: 1px 1px 25px -8px #360147;
         &:hover{
             @apply shadow-none;
@@ -35,9 +41,7 @@
 		@apply opacity-100;
 	}
 
-	.content-image{
-		
-	}
+
 
 	.content-details {
 		@apply absolute text-center px-4 w-full opacity-100;
@@ -67,13 +71,13 @@
         line-clamp: 3;
         overflow: hidden;
 	}
-}
-.content-text > a{
-    @apply transform transition duration-500 py-4;
-    width: 32px;
-        &:hover{
-            @apply rotate-180;
-        }
+	a{
+		@apply transform transition duration-500 py-4;
+		width: 32px;
+			&:hover{
+				@apply rotate-180;
+			}
+	}
 }
 
 
