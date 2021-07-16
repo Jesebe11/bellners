@@ -1,9 +1,12 @@
 .the-content{
     @apply text-justify;
-}
-.the-content > h2{
-    @apply text-2xl py-4 text-bell-purple-dark;
-}
-.the-content > p{
-    @apply px-4;
+        h2{
+            @apply text-4xl py-4 text-bell-purple-dark;
+        }
+        h3{
+            @apply text-2xl py-2 text-bell-purple-dark;
+        }
+        p{
+            @apply px-4;
+        }
 }
