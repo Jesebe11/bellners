@@ -6,4 +6,77 @@
                     @apply animate-none;
                 }
         }
+        &__list{
+            @apply flex gap-8 p-4 overflow-x-scroll max-w-full;
+            .item{
+                @apply font-bold text-sm flex flex-col gap-2 bg-bell-gray-4 justify-center items-center border border-bell-gray-1 transform relative;
+                    min-width:180px;
+                    &:hover{
+                        @apply bg-transparent scale-105 shadow-2xl;
+                    }
+                img{
+                        width: 32px;
+                        height: 32px;
+                    }
+                &::before, &::after{
+                    @apply w-full h-full absolute;
+                    box-sizing: inherit;
+                    content: '';
+            }
+        }
+        .spin {
+            height: 180px;
+            width: 180px;
+        }
+        .spin::before,
+        .spin::after {
+            @apply top-0 left-0;
+        }
+
+        .spin::before {
+            @apply border-4 border-transparent;
+        }
+
+        .spin:hover::before {
+            border-top-color: #eaeaea;
+            border-right-color: #eaeaea;
+            border-bottom-color: #eaeaea;
+            transition: border-top-color 0.15s linear, border-right-color 0.15s linear 0.10s, border-bottom-color 0.15s linear 0.20s;
+        }
+        
+        .spin::after {
+            border: 0 solid transparent;
+        }
+        
+        .spin:hover::after {
+            border-top: 4px solid #eaeaea;
+            border-left-width: 4px;
+            border-right-width: 4px;
+            transform: rotate(270deg);
+            transition: transform 0.4s linear 0s, border-left-width 0s linear 0.35s, -webkit-transform 0.4s linear 0s;
+        }
+        
+        .circle {
+            border-radius: 100%;
+            box-shadow: none;
+        }
+        
+        .circle::before,
+        .circle::after {
+            border-radius: 100%;
+        }
+}
+}
+
+@screen lg{
+    .info-band{
+        &__list{
+            @apply max-w-none;
+            scrollbar-width: none;
+            overflow: unset;
+            .item{
+                @apply min-w-0;
+            }
+        }
+    }
 }
