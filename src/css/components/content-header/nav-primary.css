@@ -25,7 +25,7 @@
                 }
             }
                     .sub-menu {
-                        @apply absolute bg-transparent pl-0 mt-2 hidden;
+                        @apply absolute bg-transparent pl-0 mt-2 hidden z-50;
                         min-width: 240px;
                         a {
                             @apply p-3 w-full;
@@ -35,7 +35,7 @@
                             }
                         }
                         .menu-item {
-                            @apply bg-bell-purple-light-1 bg-opacity-25 text-bell-gray mb-1 mr-0 p-0 w-full font-bold transform transition duration-700;
+                            @apply bg-bell-purple-light-1 bg-opacity-50 text-bell-gray-3 mb-1 mr-0 p-0 w-full font-bold transform transition duration-700;
                             &:hover {
                                 @apply bg-bell-purple-dark text-bell-gray-3 ml-8 transform transition duration-700;
                             }
@@ -49,7 +49,7 @@
                     }
                     &:hover {
                         .sub-menu {
-                            @apply flex gap-1 flex-col ml-4;
+                            @apply flex gap-1 flex-col ml-4 z-50;
                             .menu-item:nth-child(1) {
                                 animation: item .1s ease-in-out 1;
                             }
