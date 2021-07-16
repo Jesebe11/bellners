@@ -35,7 +35,7 @@
                             }
                         }
                         .menu-item {
-                            @apply bg-bell-purple-light-1 bg-opacity-50 text-bell-gray-3 mb-1 mr-0 p-0 w-full font-bold transform transition duration-700;
+                            @apply bg-bell-purple-dark text-bell-gray-3 mb-1 mr-0 p-0 w-full font-bold transform transition duration-700;
                             &:hover {
                                 @apply bg-bell-purple-dark text-bell-gray-3 ml-8 transform transition duration-700;
                             }
