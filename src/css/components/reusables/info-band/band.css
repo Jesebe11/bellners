@@ -1,3 +1,9 @@
 .info-band{
-    @apply bg-bell-gray-2;
+    @apply bg-bell-gray-2 text-bell-gray-3 flex flex-col gap-4 justify-center items-center;
+        .top-btn{
+            @apply -mt-8 rounded-full bg-bell-gray-4 p-4 transform animate-bounce transition duration-500;
+                &:hover{
+                    @apply animate-none;
+                }
+        }
 }

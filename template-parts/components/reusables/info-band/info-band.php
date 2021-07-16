@@ -1,23 +1,23 @@
 <section class="info-band">
     <a class="top-btn" href="#top">
-        <img src="https://i.postimg.cc/sf99dLG9/up-arrow.png" alt="">
+        <img src="https://i.postimg.cc/zfb89Jp0/upload.png" alt="">
     </a>
     <ul class="info-band__list">
         <li class="item">
             <h1>Soporte 24/7</h1>
-            <img src="" alt="">
+            <img src="https://i.postimg.cc/15Cnp3dz/technical-support.png" alt="">
         </li>
         <li class="item">
             <h1>Descuentos especiales</h1>
-            <img src="" alt="">
+            <img src="https://i.postimg.cc/BbN87SQM/gift-box.png" alt="">
         </li>
         <li class="item">
             <h1>Pago Seguro</h1>
-            <img src="" alt="">
+            <img src="https://i.postimg.cc/9XBqQptZ/payment-security.png" alt="">
         </li>
         <li class="item">
             <h1>Diseños Personalizados</h1>
-            <img src="" alt="">
+            <img src="https://i.postimg.cc/ncc9jD05/idea.png" alt="">
         </li>
     </ul>
 </section>
