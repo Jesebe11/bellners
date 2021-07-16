@@ -16,12 +16,6 @@
                         @apply text-bell-gray-1;
                     }
             }
-            .top-btn{
-                @apply rounded-full border-2 border-bell-gray p-4 -mt-6 bg-bell-purple-dark text-bell-gray-1 font-bold animate-bounce duration-300;
-                    &:hover{
-                        @apply animate-none;
-                    }
-            }
         }
         .newsletter-form{
             .wpcf7{
