@@ -14,10 +14,33 @@
                                         @apply flex flex-col gap-4 text-bell-purple-dark font-bold text-base;
                                             .woocommerce-input-wrapper{
                                                 .input-text {
-                                                    @apply w-1/2 bg-transparent border border-bell-purple-dark p-4 rounded-sm;
+                                                    @apply w-full bg-transparent border border-bell-purple-dark p-4 rounded-sm;
                                                 }
                                             }
                                     }
+                            }
+                        }
+                }
+        }
+        .woocommerce-checkout-review-order{
+            @apply flex gap-4;
+                .woocommerce-checkout-review-order-table , .woocommerce-checkout-payment{
+                    @apply w-1/2;
+                }
+                .woocommerce-checkout-review-order-table{
+                    @apply border-separate border-2 border-bell-purple-dark p-4;
+                        thead{
+                            @apply bg-bell-purple-dark text-bell-gray-3;
+                        }
+                }
+                .woocommerce-checkout-payment{
+                    @apply bg-bell-gray-2 text-bell-gray-3 p-4 flex flex-col gap-4;
+                        .form-row{
+                            .woocommerce-terms-and-conditions-wrapper{
+                                @apply italic border-t-2 border-b-2 border-bell-gray-3 my-2;
+                            }
+                            .button{
+                                @apply bg-bell-gray-3 p-4 text-lg font-bold rounded-sm text-bell-gray-2;
                             }
                         }
                 }
