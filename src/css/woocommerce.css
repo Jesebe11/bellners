@@ -18,3 +18,6 @@
 @import './components/woocommerce/account/edit-address.css';
 @import './components/woocommerce/account/dashboard.css';
 @import './components/woocommerce/account/form-login.css';
+/** Checkout Page */
+@import './components/woocommerce/checkout/form-checkout.css';
+@import './components/woocommerce/checkout/form-coupon.css';

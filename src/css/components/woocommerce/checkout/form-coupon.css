@@ -1,0 +1,25 @@
+.woocommerce-checkout{
+    @apply flex flex-col gap-4;
+        .col2-set{
+            @apply border border-bell-purple-dark rounded-md p-4 flex flex-row gap-2 w-full;
+                .col-1 , .col-2{
+                    @apply w-1/2;
+                        .woocommerce-billing-fields , .woocommerce-additional-fields{
+                            h3{
+                                @apply text-4xl;
+                            }
+                            .woocommerce-billing-fields__field-wrapper , .woocommerce-additional-fields__field-wrapper{
+                                @apply flex flex-col gap-4;
+                                    .form-row{
+                                        @apply flex flex-col gap-4 text-bell-purple-dark font-bold text-base;
+                                            .woocommerce-input-wrapper{
+                                                .input-text {
+                                                    @apply w-1/2 bg-transparent border border-bell-purple-dark p-4 rounded-sm;
+                                                }
+                                            }
+                                    }
+                            }
+                        }
+                }
+        }
+}
